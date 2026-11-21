@@ -1,0 +1,28 @@
+pair3: RNA PAF records hap1 620738 kept 608053; hap2 622779 kept 610985
+intact: transcript_extends_upstream_of_model_start=30, upstream_exon_spliced_into_model_start=18, outside_windows=2
+partial: transcript_extends_upstream_of_model_start=35, upstream_exon_spliced_into_model_start=28, outside_windows=2
+pseudogene-like: transcript_extends_upstream_of_model_start=21, expressed_but_5prime_end_not_covered=1, upstream_exon_spliced_into_model_start=1, transcript_starts_near_model_start=1
+uncertain: transcript_extends_upstream_of_model_start=9
+intact loci with a start-codon problem (17): upstream_exon_spliced_into_model_start=12, transcript_extends_upstream_of_model_start=5
+  hap1 hap1_L008 NCR3 not_aligned(q_start=2) reads=363 spliced=190 over_start=105 upstream100=105 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap1 hap1_L023 KLRD1 non-ATG(TCG) reads=71 spliced=52 over_start=32 upstream100=26 junction_into_start=3 -> upstream_exon_spliced_into_model_start(real_start_is_upstream)
+  hap1 hap1_L024 KLRD1 non-ATG(TCG) reads=67 spliced=42 over_start=37 upstream100=36 junction_into_start=4 -> upstream_exon_spliced_into_model_start(real_start_is_upstream)
+  hap1 hap1_L025 KLRD1 non-ATG(TCG) reads=93 spliced=71 over_start=54 upstream100=51 junction_into_start=2 -> upstream_exon_spliced_into_model_start(real_start_is_upstream)
+  hap1 hap1_L026 KLRD1 non-ATG(TCT) reads=139 spliced=107 over_start=65 upstream100=60 junction_into_start=6 -> upstream_exon_spliced_into_model_start(real_start_is_upstream)
+  hap1 hap1_L028 KLRD1 non-ATG(TCT) reads=209 spliced=173 over_start=142 upstream100=131 junction_into_start=13 -> upstream_exon_spliced_into_model_start(real_start_is_upstream)
+  hap1 hap1_L030 KLRD1 non-ATG(TCG) reads=86 spliced=71 over_start=58 upstream100=55 junction_into_start=5 -> upstream_exon_spliced_into_model_start(real_start_is_upstream)
+  hap1 hap1_L064 MR1 non-ATG(TTA) reads=69 spliced=34 over_start=31 upstream100=31 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap2 hap2_L013 NCR3 not_aligned(q_start=2) reads=371 spliced=198 over_start=112 upstream100=112 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap2 hap2_L028 KLRD1 non-ATG(TCG) reads=103 spliced=67 over_start=34 upstream100=28 junction_into_start=5 -> upstream_exon_spliced_into_model_start(real_start_is_upstream)
+  hap2 hap2_L029 KLRD1 non-ATG(TCG) reads=106 spliced=91 over_start=83 upstream100=82 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap2 hap2_L030 KLRD1 not_aligned(q_start=5) reads=114 spliced=94 over_start=90 upstream100=87 junction_into_start=5 -> upstream_exon_spliced_into_model_start(real_start_is_upstream)
+  hap2 hap2_L031 KLRD1 non-ATG(TCT) reads=173 spliced=142 over_start=108 upstream100=102 junction_into_start=8 -> upstream_exon_spliced_into_model_start(real_start_is_upstream)
+  hap2 hap2_L032 KLRD1 not_aligned(q_start=6) reads=192 spliced=155 over_start=124 upstream100=123 junction_into_start=2 -> upstream_exon_spliced_into_model_start(real_start_is_upstream)
+  hap2 hap2_L034 KLRD1 non-ATG(TCG) reads=131 spliced=113 over_start=97 upstream100=94 junction_into_start=3 -> upstream_exon_spliced_into_model_start(real_start_is_upstream)
+  hap2 hap2_L035 KLRD1 not_aligned(q_start=6) reads=115 spliced=64 over_start=56 upstream100=55 junction_into_start=3 -> upstream_exon_spliced_into_model_start(real_start_is_upstream)
+  hap2 hap2_L068 MR1 non-ATG(TTA) reads=55 spliced=38 over_start=31 upstream100=31 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+expressed loci by family (any RNA reads >= 3): B2M=2/2, CD1=20/20, CLEC12A=2/2, CLEC2D=6/6, CLEC4E=2/2, KIR=2/2, KLRB1=2/2, KLRC=20/20, KLRD1=19/19, KLRF=4/4, KLRG1=2/2, KLRG2=0/2, KLRK1=2/2, LAIR1=2/2, LILR=10/10, MHC-I=35/35, MR1=2/2, NCR1=2/2, NCR2=0/2, NCR3=2/2, TAP1=2/2, TAP2=6/6
+variant sites: no_RNA_coverage=3
+  hap1_L070|hap2_L072 CD1|CD1 hap1=partial,hap2=intact CDS6:G>A@13346->stop(TGA) | better hap2: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] | alt hap1: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] -> no_RNA_coverage
+  hap1_L027|hap2_L029 KLRD1|KLRD1 hap1=pseudogene-like,hap2=intact CDS5:C>T@13679->stop(TGA) | better hap2: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] | alt hap1: n=1(mq20 1) match=0 sub=1 ins=0 del=0 [sub:Cx1] -> no_RNA_coverage
+  hap2_L032 KLRD1 hap2=intact,hap1=pseudogene-like splice_site:C>T@9999 | better hap2: n=2(mq20 2) match=2 sub=0 ins=0 del=0 [] | alt hap1: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] -> no_RNA_coverage

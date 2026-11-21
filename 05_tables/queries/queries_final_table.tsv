@@ -1,0 +1,100 @@
+taxon	symbol	gene_id	protein_acc	n_isoforms	longest_len_aa	queried_as	alias_match	description
+Hsapiens	KLRK1	22914	NP_031386.2	1	216	KLRK1		killer cell lectin like receptor K1
+Hsapiens	KIR3DL1	3811	NP_001309097.1	3	444	KIR3DL1		killer cell immunoglobulin like receptor, three Ig domains and long cytoplasmic tail 1
+Hsapiens	KLRB1	3820	NP_002249.1	1	225	KLRB1		killer cell lectin like receptor B1
+Hsapiens	LILRB1	10859	XP_047294036.1	77	688	LILRB1		leukocyte immunoglobulin like receptor B1
+Hsapiens	KLRC1	3821	NP_002250.2	5	233	KLRC1		killer cell lectin like receptor C1
+Hsapiens	KLRD1	3824	XP_047284777.1	21	225	KLRD1		killer cell lectin like receptor D1
+Hsapiens	KLRC2	3822	NP_002251.2	1	231	KLRC2		killer cell lectin like receptor C2
+Hsapiens	KIR2DL4	3805	NP_002246.5	3	377	KIR2DL4		killer cell immunoglobulin like receptor, two Ig domains and long cytoplasmic tail 4
+Hsapiens	KLRG1	10219	XP_016874171.1	17	199	KLRG1		killer cell lectin like receptor G1
+Hsapiens	KIR2DS4	3809	NP_036446.3	3	304	KIR2DS4		killer cell immunoglobulin like receptor, two Ig domains and short cytoplasmic tail 4 (gene/pseudogene)
+Hsapiens	KIR2DL1	3802	NP_055033.2	2	348	KIR2DL1		killer cell immunoglobulin like receptor, two Ig domains and long cytoplasmic tail 1
+Hsapiens	CLEC12A	160364	XP_006719096.1	28	282	CLEC12A		C-type lectin domain family 12 member A
+Hsapiens	KIR3DL3	115653	NP_703144.3	1	410	KIR3DL3		killer cell immunoglobulin like receptor, three Ig domains and long cytoplasmic tail 3
+Hsapiens	CLEC2D	29121	NP_001004419.1	5	194	CLEC2D		C-type lectin domain family 2 member D
+Hsapiens	CLEC4E	26253	NP_055173.1	4	219	CLEC4E		C-type lectin domain family 4 member E
+Hsapiens	KLRF1	51348	NP_057607.1	8	231	KLRF1		killer cell lectin like receptor F1
+Hsapiens	KLRC3	3823	NP_031359.2	2	257	KLRC3		killer cell lectin like receptor C3
+Hsapiens	KLRC4	8302	NP_038459.1	1	158	KLRC4		killer cell lectin like receptor C4
+Hsapiens	KLRF2	100431172	NP_001177694.1	1	207	KLRF2		killer cell lectin like receptor F2
+Hsapiens	KLRG2	346689	NP_940910.1	7	409	KLRG2		killer cell lectin like receptor G2
+Hsapiens	HLA-B	3106	XP_054186779.1	4	405	HLA-B		major histocompatibility complex, class I, B
+Hsapiens	HLA-A	3105	XP_041536702.1	4	391	HLA-A		major histocompatibility complex, class I, A
+Hsapiens	HLA-G	3135	XP_054211287.1	40	386	HLA-G		major histocompatibility complex, class I, G
+Hsapiens	HLA-C	3107	NP_001229971.1	2	366	HLA-C		major histocompatibility complex, class I, C
+Hsapiens	B2M	567	XP_005254606.1	4	122	B2M		beta-2-microglobulin
+Hsapiens	HLA-E	3133	XP_016866296.1	8	399	HLA-E		major histocompatibility complex, class I, E
+Hsapiens	NCR1	9437	NP_004820.2	38	304	NCR1		natural cytotoxicity triggering receptor 1
+Hsapiens	NCR3	259197	XP_054185734.1	32	223	NCR3		natural cytotoxicity triggering receptor 3
+Hsapiens	TAP1	6890	NP_000584.3	2	748	TAP1		transporter 1, ATP binding cassette subfamily B member
+Hsapiens	LILRB2	10288	NP_005865.3	6	598	LILRB2		leukocyte immunoglobulin like receptor B2
+Hsapiens	CD1D	912	NP_001358691.1	8	335	CD1D		CD1d molecule
+Hsapiens	LILRB4	11006	XP_054175602.1	83	490	LILRB4		leukocyte immunoglobulin like receptor B4
+Hsapiens	NCR2	9436	NP_004819.2	5	276	NCR2		natural cytotoxicity triggering receptor 2
+Hsapiens	CD1A	909	NP_001754.2	4	327	CD1A		CD1a molecule
+Hsapiens	LAIR1	3903	XP_054176961.1	36	311	LAIR1		leukocyte associated immunoglobulin like receptor 1
+Hsapiens	FCAR	2204	NP_001991.1	60	287	FCAR		Fc alpha receptor
+Hsapiens	HLA-F	3134	XP_047274674.1	72	445	HLA-F		major histocompatibility complex, class I, F
+Hsapiens	MR1	3140	NP_001372090.1	13	341	MR1		major histocompatibility complex, class I-related
+Hsapiens	LILRA2	11027	NP_001277200.1	19	490	LILRA2		leukocyte immunoglobulin like receptor A2
+Hsapiens	LILRA5	353514	NP_067073.1	4	299	LILRA5		leukocyte immunoglobulin like receptor A5
+Hsapiens	TAP2	6891	NP_000535.3	3	703	TAP2		transporter 2, ATP binding cassette subfamily B member
+Mmusculus	Klrk1	27007	NP_149069.1	5	232	Klrk1		killer cell lectin-like receptor subfamily K, member 1
+Mmusculus	Klrg1	50928	NP_058666.1	1	188	Klrg1		killer cell lectin-like receptor subfamily G, member 1
+Mmusculus	Klrd1	16643	NP_034784.1	3	179	Klrd1		killer cell lectin-like receptor, subfamily D, member 1
+Mmusculus	Clec4e	56619	NP_064332.1	2	214	Clec4e		C-type lectin domain family 4, member e
+Mmusculus	Klrc1	16641	NP_001129540.1	6	244	Klrc1		killer cell lectin-like receptor subfamily C, member 1
+Mmusculus	Clec2d	93694	NP_444339.1	2	207	Clec2d		C-type lectin domain family 2, member d
+Mmusculus	Clec12a	232413	NP_808354.1	1	267	Clec12a		C-type lectin domain family 12, member a
+Mmusculus	Klrb1	100043861	XP_017176770.1	2	243	Klrb1		killer cell lectin-like receptor subfamily B member 1
+Mmusculus	Klrc3	58179	XP_006506493.1	2	246	Klrc2,Klrc3		killer cell lectin-like receptor subfamily C, member 3
+Mmusculus	Kir3dl1	245616	NP_808417.2	2	409	Kir3dl1		killer cell immunoglobulin-like receptor, three domains, long cytoplasmic tail, 1
+Mmusculus	Klrc2	16642	XP_017176908.1	5	246	Klrc2		killer cell lectin-like receptor subfamily C, member 2
+Mmusculus	Klrg2	74253	NP_001028343.2	2	387	Klrg2		killer cell lectin-like receptor subfamily G, member 2
+Mmusculus	B2m	12010	NP_033865.2	1	119	B2m		beta-2 microglobulin
+Mmusculus	Tap1	21354	NP_038711.2	2	724	Tap1		transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)
+Mmusculus	Cd1d1	12479	NP_001396544.1	14	336	Cd1a,Cd1d,Cd1d1		CD1d1 antigen
+Mmusculus	Ncr1	17086	NP_034876.2	2	325	Ncr1		natural cytotoxicity triggering receptor 1
+Mmusculus	Mr1	15064	NP_032235.1	3	341	Mr1		major histocompatibility complex, class I-related
+Mmusculus	Lilrb4a	14728	NP_038560.1	3	335	Lilrb4	ALIAS	leukocyte immunoglobulin-like receptor, subfamily B, member 4A
+Mmusculus	Lair1	52855	NP_001106945.1	13	263	Lair1		leukocyte-associated Ig-like receptor 1
+Mmusculus	Lilra5	232801	NP_001074708.2	4	295	Lilra5		leukocyte immunoglobulin-like receptor, subfamily A (with TM domain), member 5
+Mmusculus	Klrb1c	17059	NP_001153376.2	2	223	Klrb1c		killer cell lectin-like receptor subfamily B member 1C
+Mmusculus	H2-K1	14972	XP_006523736.1	11	458	H2-D1,H2-K1		histocompatibility 2, K1, K region
+Mmusculus	H2-D1	14964	NP_034510.3	1	362	H2-D1,H2-K1		histocompatibility 2, D region locus 1
+Mmusculus	Klra1	16627	NP_057868.2	1	262	Klra1		killer cell lectin-like receptor, subfamily A, member 1
+Mmusculus	Tap2	21355	NP_035660.3	1	702	Tap2		transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)
+Mmusculus	Klra8	16639	NP_001095090.1	2	266	Klra8		killer cell lectin-like receptor, subfamily A, member 8
+Mmusculus	Klra3	16634	NP_001276533.1	3	266	Klra3		killer cell lectin-like receptor, subfamily A, member 3
+Mmusculus	H2-T23	15040	NP_034528.1	1	357	H2-K1,H2-T23		histocompatibility 2, T region locus 23
+Mmusculus	Klra4	16635	NP_001239506.1	3	263	Klra4		killer cell lectin-like receptor, subfamily A, member 4
+Mmusculus	Klra7	16638	NP_001103793.1	2	280	Klra7		killer cell lectin-like receptor, subfamily A, member 7
+Mmusculus	H2-Q1	15006	XP_011244602.1	13	443	H2-D1	ALIAS	histocompatibility 2, Q region locus 1
+Mmusculus	H2-Q10	15007	NP_034521.1	1	325	H2-K1	ALIAS	histocompatibility 2, Q region locus 10
+Mmusculus	Klra5	16636	NP_032489.1	3	266	Klra5		killer cell lectin-like receptor, subfamily A, member 5
+Mmusculus	H2-Q7	15018	NP_034524.3	3	334	H2-Q7		histocompatibility 2, Q region locus 7
+Mmusculus	H2-Q4	15015	NP_001137161.1	1	354	H2-D1	ALIAS	histocompatibility 2, Q region locus 4
+Mmusculus	Klra9	16640	NP_034781.2	5	266	Klra9		killer cell lectin-like receptor subfamily A, member 9
+Mmusculus	H2-Q2	15013	NP_034522.2	2	360	H2-D1,H2-K1	ALIAS	histocompatibility 2, Q region locus 2
+Mmusculus	H2-Q6	110557	NP_001355670.1	3	326	H2-K1	ALIAS	histocompatibility 2, Q region locus 6
+Mmusculus	Klra2	16633	XP_017176905.1	6	428	Klra2		killer cell lectin-like receptor, subfamily A, member 2
+Mmusculus	H2-T13	14963	NP_032225.3	1	349	H2-D1,H2-K1	ALIAS	histocompatibility 2, T region locus 13
+Mmusculus	LOC547349	547349	NP_001020379.1	1	382	H2-K1	ALIAS	MHC class I family member
+Raegyptiacus	CLEC2D	107502075	XP_015984376.2	1	198	CLEC2D		C-type lectin domain family 2 member D
+Raegyptiacus	CLEC12A	107502085	XP_015984401.2	1	267	CLEC12A		C-type lectin domain family 12 member A
+Raegyptiacus	CLEC4E	107498327	XP_015976807.2	1	224	CLEC4E		C-type lectin domain family 4 member E
+Raegyptiacus	KLRB1	107501651	XP_036093297.1	6	261	KLRB1		killer cell lectin like receptor B1
+Raegyptiacus	KLRG1	107501670	XP_015983549.1	3	214	KLRG1		killer cell lectin like receptor G1
+Raegyptiacus	KLRF2	107502063	XP_015984345.2	1	204	KLRF2		killer cell lectin like receptor F2
+Raegyptiacus	KLRG2	107519330	XP_016017343.2	1	423	KLRG2		killer cell lectin like receptor G2
+Raegyptiacus	LOC107505366	107505366	XP_015990963.2	1	177	KLRD1	ALIAS	natural killer cells antigen CD94
+Raegyptiacus	LOC107502066	107502066	XP_015984348.1	4	233	KLRF1	ALIAS	killer cell lectin-like receptor subfamily F member 1
+Raegyptiacus	B2M	107505837	XP_036094720.1	2	124	B2M		beta-2-microglobulin
+Raegyptiacus	TAP1	107511995	XP_016002528.2	1	744	TAP1		transporter 1, ATP binding cassette subfamily B member
+Raegyptiacus	NCR3	107498494	XP_015977176.2	6	222	NCR3		natural cytotoxicity triggering receptor 3
+Raegyptiacus	CD1A	107499736	XP_015979694.2	1	340	CD1A		CD1a molecule
+Raegyptiacus	NCR2	107502018	XP_036073736.1	3	270	NCR2		natural cytotoxicity triggering receptor 2
+Raegyptiacus	LAIR1	107503049	XP_015986378.2	1	260	LAIR1		leukocyte associated immunoglobulin like receptor 1
+Raegyptiacus	NCR1	107515390	XP_036088229.1	5	295	NCR1		natural cytotoxicity triggering receptor 1
+Raegyptiacus	TAP2	107511996	XP_016002529.2	2	703	TAP2		transporter 2, ATP binding cassette subfamily B member

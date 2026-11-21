@@ -1,0 +1,21 @@
+CURATION SUMMARY pair2
+
+hap1: 72 loci; realignment consistent with pilot status: 63; pilot intact 14, pass all gene-model checks (ATG, GT-AG/GC-AG, terminal stop, no internal stop): 10
+  back-search: ambiguous=1, confirmed=67, no=2, relabel=2
+  relabel suggestions: CLEC2D->other(CLEC2A) x1; LILR->other(GP6) x1
+  loci with a >=98% identical paralog (same haplotype, same family): LILR=5, NCR2=2
+hap2: 64 loci; realignment consistent with pilot status: 60; pilot intact 14, pass all gene-model checks (ATG, GT-AG/GC-AG, terminal stop, no internal stop): 10
+  back-search: ambiguous=1, confirmed=59, no=2, relabel=2
+  relabel suggestions: CLEC2D->other(CLEC2A) x1; LILR->other(GP6) x1
+
+pilot difference rows: 42; of these 0 are the same event repeated in another window pair (not re-examined twice)
+locus-level differences re-examined: 13
+    7  same_status_at_sensitive_realignment(sensitivity_artefact_of_the_pilot_call)
+    3  same_status_at_sensitive_realignment(call_difference_is_a_threshold/sensitivity_artefact)
+    2  status_differs_confirmed:hap1=pseudogene-like_vs_hap2=partial
+    1  status_differs_confirmed:hap1=partial_vs_hap2=pseudogene-like
+gaps/indels >=5 kb re-mapped (unique): 28
+    8  present_in_paired_window(window_alignment_missed_it)
+    8  present_elsewhere_in_hap1
+    8  present_elsewhere_in_hap2
+    4  absent_from_hap2

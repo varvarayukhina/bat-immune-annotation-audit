@@ -1,0 +1,4 @@
+diff_index	locus	family	classes	better_hap	alt_hap	variant	rna_at_better_copy	rna_at_alt_copy	rna_verdict
+28	hap1_L070|hap2_L072	CD1|CD1	hap1=partial,hap2=intact	hap2	hap1	CDS6:G>A@13346->stop(TGA)	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	no_RNA_coverage
+59	hap1_L027|hap2_L029	KLRD1|KLRD1	hap1=pseudogene-like,hap2=intact	hap2	hap1	CDS5:C>T@13679->stop(TGA)	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	n=1(mq20 1) match=0 sub=1 ins=0 del=0 [sub:Cx1]	no_RNA_coverage
+62	hap2_L032	KLRD1	hap2=intact,hap1=pseudogene-like	hap2	hap1	splice_site:C>T@9999	n=2(mq20 2) match=2 sub=0 ins=0 del=0 []	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	no_RNA_coverage

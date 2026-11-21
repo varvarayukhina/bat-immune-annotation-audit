@@ -1,0 +1,5 @@
+taxon	symbol	reason
+Hsapiens	PNKD	NCBI alias match for MR1, unrelated gene
+Hsapiens	SEC14L2	NCBI alias match for TAP1, unrelated gene
+Hsapiens	SEC14L3	NCBI alias match for TAP2, unrelated gene
+Mmusculus	Pnkd	matched taxon id as query, unrelated gene

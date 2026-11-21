@@ -1,0 +1,73 @@
+pair1: PAF records 2572740, kept (primary, block>=2000, de<=0.02) 46477
+  hap1|hap1_LRC_1|CM175927.1:2540154-3425589 median depth 6.0 reads 10362
+  hap1|hap1_LRC_2|CM175918.1:92087830-92301776 median depth 8.0 reads 128
+  hap1|hap1_MHC-I_1|CM175927.1:6309-2186435 median depth 6.0 reads 941
+  hap1|hap1_MHC-I_2|CM175920.1:10562833-11020030 median depth 10.0 reads 745
+  hap1|hap1_MHC-I_3|CM175930.1:37514794-37862850 median depth 10.0 reads 2520
+  hap1|hap1_MHC-I_4|CM175918.1:76311911-76606620 median depth 9.0 reads 1606
+  hap1|hap1_MHC-I_5|CM175918.1:95224016-98049656 median depth 8.0 reads 12850
+  hap1|hap1_MHC-I_6|CM175921.1:28997427-29298665 median depth 10.0 reads 729
+  hap1|hap1_MHC-I_7|CM175921.1:24897323-25158434 median depth 10.0 reads 168
+  hap1|hap1_MHC-I_8|CM175927.1:9446391-9658758 median depth 5.0 reads 75
+  hap1|hap1_MHC-I_9|CM175913.1:64522760-64727724 median depth 9.0 reads 128
+  hap1|hap1_MHC-I_10|CM175916.1:76681947-76882506 median depth 19.0 reads 284
+  hap1|hap1_MHC-I_11|CM175917.1:105587375-105791491 median depth 9.0 reads 112
+  hap1|hap1_MHC-I_12|CM175922.1:50874894-51076010 median depth 11.0 reads 140
+  hap1|hap1_MHC-I_13|CM175930.1:23066798-23280727 median depth 10.0 reads 162
+  hap1|hap1_MHC-I_14|CM175930.1:43033725-43234251 median depth 6.0 reads 97
+  hap1|hap1_MHC-I_15|CM175931.1:14177788-14401357 median depth 3.0 reads 87
+  hap1|hap1_MHC-I_16|CM175932.1:17449378-17713150 median depth 6.0 reads 117
+  hap1|hap1_NKC_1|CM175915.1:22584942-24477695 median depth 11.0 reads 3105
+  hap1|hap1_NKC_2|CM175917.1:104215684-104416005 median depth 9.0 reads 150
+  hap2|hap2_LRC_1|CM175885.1:2493138-3438288 median depth 6.0 reads 404
+  hap2|hap2_LRC_2|CM175876.1:92075400-92289396 median depth 7.0 reads 113
+  hap2|hap2_MHC-I_2|CM175885.1:5865-2141876 median depth 6.0 reads 1278
+  hap2|hap2_MHC-I_4|CM175878.1:10758255-11202451 median depth 9.0 reads 370
+  hap2|hap2_MHC-I_3|CM175888.1:37547573-38076593 median depth 10.0 reads 417
+  hap2|hap2_MHC-I_1|CM175876.1:75948010-76615552 median depth 8.0 reads 818
+  hap2|hap2_MHC-I_6|CM175876.1:95057776-98150524 median depth 9.0 reads 4783
+  hap2|hap2_MHC-I_8|CM175879.1:27925471-28178809 median depth 10.0 reads 169
+  hap2|hap2_MHC-I_7|CM175879.1:23865525-24127518 median depth 9.0 reads 191
+  hap2|hap2_MHC-I_5|CM175885.1:9272854-9549976 median depth 6.0 reads 143
+  hap2|hap2_MHC-I_9|CM175871.1:65666980-65871732 median depth 9.0 reads 117
+  hap2|hap2_MHC-I_10|CM175875.1:104862463-105066530 median depth 10.0 reads 136
+  hap2|hap2_MHC-I_11|CM175880.1:50949922-51151034 median depth 10.0 reads 144
+  hap2|hap2_MHC-I_12|CM175888.1:22991606-23206068 median depth 7.0 reads 132
+  hap2|hap2_MHC-I_13|CM175888.1:43326017-43526540 median depth 5.0 reads 87
+  hap2|hap2_MHC-I_14|CM175889.1:14202568-14427800 median depth 5.0 reads 85
+  hap2|hap2_MHC-I_15|CM175890.1:17969626-18233170 median depth 6.0 reads 111
+  hap2|hap2_NKC_1|CM175873.1:22806950-24847614 median depth 10.0 reads 2170
+  hap2|hap2_NKC_2|CM175875.1:103494475-103694796 median depth 8.0 reads 303
+locus: about_1x=168, about_2x=17, below_1x=13, outside_windows=5, low_coverage=1, near_0=1
+hap_only_locus: about_1x=1
+absent_gap: about_1x=14
+>=98% paralog loci: hap1 hap1_L065 LILR ratio=1.67 mq20=1.67 span=0 -> about_1x:supported_as_assembled; hap1 hap1_L066 LILR ratio=1.66 mq20=1.66 span=0 -> about_1x:supported_as_assembled; hap2 hap2_L023 MHC-I ratio=0.83 mq20=0.83 span=4 -> about_1x:supported_as_assembled; hap2 hap2_L025 MHC-I ratio=0.74 mq20=0.74 span=3 -> about_1x:supported_as_assembled; hap2 hap2_L099 CD1 ratio=1.22 mq20=1.22 span=9 -> about_1x:supported_as_assembled; hap2 hap2_L100 CD1 ratio=1.40 mq20=1.40 span=12 -> about_1x:supported_as_assembled; hap2 hap2_L101 CD1 ratio=0.82 mq20=0.82 span=5 -> about_1x:supported_as_assembled; hap2 hap2_L102 CD1 ratio=1.59 mq20=1.59 span=12 -> about_1x:supported_as_assembled; hap2 hap2_L103 CD1 ratio=0.99 mq20=0.99 span=6 -> about_1x:supported_as_assembled; hap2 hap2_L104 CD1 ratio=0.56 mq20=0.56 span=3 -> about_1x:supported_as_assembled
+  hap_only_locus hap1 hap1_L006 CLEC2D partial len=3712 ratio=1.18 span=9 -> about_1x:supported_as_assembled
+  absent_gap hap2 gap6 - absent_from_hap1 len=39917 ratio=1.44 span=0 -> about_1x:supported_as_assembled(no_spanning_read)
+  absent_gap hap1 gap31 - absent_from_hap2 len=83699 ratio=1.31 span=0 -> about_1x:supported_as_assembled(no_spanning_read)
+  absent_gap hap1 gap95 - absent_from_hap2 len=24094 ratio=1.49 span=0 -> about_1x:supported_as_assembled(no_spanning_read)
+  absent_gap hap1 gap96 - absent_from_hap2 len=119736 ratio=1.36 span=0 -> about_1x:supported_as_assembled(no_spanning_read)
+  absent_gap hap1 gap100 - absent_from_hap2 len=86971 ratio=1.34 span=0 -> about_1x:supported_as_assembled(no_spanning_read)
+  absent_gap hap1 gap102 - absent_from_hap2 len=51303 ratio=1.24 span=0 -> about_1x:supported_as_assembled(no_spanning_read)
+  absent_gap hap2 gap111 - absent_from_hap1 len=116048 ratio=1.04 span=0 -> about_1x:supported_as_assembled(no_spanning_read)
+  absent_gap hap2 gap118 - absent_from_hap1 len=137919 ratio=1.35 span=0 -> about_1x:supported_as_assembled(no_spanning_read)
+  absent_gap hap2 gap124 - absent_from_hap1 len=98905 ratio=1.16 span=0 -> about_1x:supported_as_assembled(no_spanning_read)
+  absent_gap hap1 gap132 - absent_from_hap2 len=20829 ratio=0.91 span=0 -> about_1x:supported_as_assembled(no_spanning_read)
+  absent_gap hap2 gap143 - absent_from_hap1 len=64779 ratio=1.26 span=0 -> about_1x:supported_as_assembled(no_spanning_read)
+  absent_gap hap1 gap150 - absent_from_hap2 len=7079 ratio=0.99 span=2 -> about_1x:supported_as_assembled
+  absent_gap hap2 gap160 - absent_from_hap1 len=10893 ratio=0.90 span=3 -> about_1x:supported_as_assembled
+  absent_gap hap1 gap167 - absent_from_hap2 len=6736 ratio=1.16 span=9 -> about_1x:supported_as_assembled
+variant sites: variant_supported_by_reads_of_hap1=8, variant_supported_by_reads_of_hap2=4, deletion_real_in_hap1=1
+  hap1_L068 LILR hap1=partial,hap2=intact CDS2:G>T@10582->stop(TAG) | better hap2: n=3(mq20 3) match=3 sub=0 ins=0 del=0 [] | alt hap1: n=6(mq20 6) match=6 sub=0 ins=0 del=0 [] -> variant_supported_by_reads_of_hap1
+  hap1_L074|hap2_L077 LILR|LILR hap1=partial,hap2=intact CDS5:del32236@45634 | better hap2: segment_depth=7.2(mapq20 7.2) window_median=6.0 ratio=1.20 | alt hap1: junction_spanning_reads=5 clean(no_indel>50bp within 500bp)=5 -> deletion_real_in_hap1
+  hap1_L077|hap2_L080 LILR|LILR hap1=partial,hap2=intact CDS4:C>T@11058->stop(TAG) | better hap2: n=9(mq20 9) match=9 sub=0 ins=0 del=0 [] | alt hap1: n=9(mq20 9) match=9 sub=0 ins=0 del=0 [] -> variant_supported_by_reads_of_hap1
+  hap2_L088 LILR hap2=partial,hap1=intact CDS6:G>A@17927->stop(TAG) | better hap1: n=5(mq20 5) match=5 sub=0 ins=0 del=0 [] | alt hap2: n=8(mq20 8) match=8 sub=0 ins=0 del=0 [] -> variant_supported_by_reads_of_hap2
+  hap1_L047|hap2_L058 MHC-I|MHC-I hap1=pseudogene-like,hap2=partial splice_site:G>A@10014 | better hap2: n=9(mq20 9) match=9 sub=0 ins=0 del=0 [] | alt hap1: n=5(mq20 5) match=5 sub=0 ins=0 del=0 [] -> variant_supported_by_reads_of_hap1
+  hap1_L047|hap2_L058 MHC-I|MHC-I hap1=pseudogene-like,hap2=partial CDS1:ins1@10101 | better hap2: n=9(mq20 9) match=9 sub=0 ins=0 del=0 [] | alt hap1: n=5(mq20 5) match=5 sub=0 ins=0 del=0 [] -> variant_supported_by_reads_of_hap1
+  hap1_L047|hap2_L058 MHC-I|MHC-I hap1=pseudogene-like,hap2=partial CDS1:del1@10119 | better hap2: n=9(mq20 9) match=9 sub=0 ins=0 del=0 [] | alt hap1: n=5(mq20 5) match=5 sub=0 ins=0 del=0 [] -> variant_supported_by_reads_of_hap1
+  hap1_L047|hap2_L058 MHC-I|MHC-I hap1=pseudogene-like,hap2=partial CDS1:ins1@10156 | better hap2: n=9(mq20 9) match=9 sub=0 ins=0 del=0 [] | alt hap1: n=5(mq20 5) match=5 sub=0 ins=0 del=0 [] -> variant_supported_by_reads_of_hap1
+  hap1_L028|hap2_L040 CD1|CD1 hap1=partial,hap2=pseudogene-like CDS2:G>A@10624->stop(TGA) | better hap1: n=12(mq20 12) match=12 sub=0 ins=0 del=0 [] | alt hap2: n=6(mq20 6) match=5 sub=0 ins=1 del=0 [ins1x1] -> variant_supported_by_reads_of_hap2
+  hap1_L032|hap2_L043 CD1|CD1 hap1=pseudogene-like,hap2=intact CDS4:del1@11347(homopolymer5) | better hap2: n=7(mq20 7) match=5 sub=1 ins=0 del=1 [del1x1,sub:Cx1,sub:Tx1] | alt hap1: n=8(mq20 8) match=8 sub=0 ins=0 del=0 [] -> variant_supported_by_reads_of_hap1
+  hap1_L032|hap2_L043 CD1|CD1 hap1=pseudogene-like,hap2=intact CDS5:ins1@11865 | better hap2: n=7(mq20 7) match=7 sub=0 ins=0 del=0 [] | alt hap1: n=9(mq20 9) match=9 sub=0 ins=0 del=0 [] -> variant_supported_by_reads_of_hap1
+  hap2_L102 CD1 hap2=pseudogene-like,hap1=partial CDS1:G>A@10075->stop(TGA) | better hap1: n=9(mq20 9) match=9 sub=0 ins=0 del=0 [] | alt hap2: n=18(mq20 18) match=18 sub=0 ins=0 del=0 [] -> variant_supported_by_reads_of_hap2
+  hap1_L042|hap2_L052 MHC-I|MHC-I hap1=intact,hap2=pseudogene-like CDS1:del4@10197 | better hap1: n=11(mq20 11) match=11 sub=0 ins=0 del=0 [] | alt hap2: n=11(mq20 11) match=11 sub=0 ins=0 del=0 [] -> variant_supported_by_reads_of_hap2

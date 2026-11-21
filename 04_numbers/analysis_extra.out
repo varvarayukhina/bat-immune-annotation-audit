@@ -1,0 +1,76 @@
+======================================================================
+1. OBSERVED HAPLOTYPE DIFFERENCES PER FAMILY (annotated loci)
+======================================================================
+Myotis sodalis           default    families= 19 with a difference=  7 sum|hap1-hap2|= 21 max=7 worst=CD1 16v23, MHC-I 34v40, LILR 20v23
+Myotis sodalis           sensitive  families= 20 with a difference= 10 sum|hap1-hap2|= 20 max=7 worst=CD1 16v23, MHC-I 35v40, CLEC2D 4v3
+Rhinolophus clivosus     default    families= 22 with a difference=  4 sum|hap1-hap2|=  8 max=3 worst=MHC-I 18v15, KLRC 9v7, LILR 11v9
+Rhinolophus clivosus     sensitive  families= 22 with a difference=  8 sum|hap1-hap2|= 12 max=3 worst=LILR 11v8, MHC-I 17v14, CLEC2D 3v4
+Eidolon dupreanum        default    families= 22 with a difference=  3 sum|hap1-hap2|=  6 max=3 worst=MHC-I 19v16, KLRC 9v11, KLRD1 10v9
+Eidolon dupreanum        sensitive  families= 21 with a difference=  6 sum|hap1-hap2|= 10 max=4 worst=MHC-I 20v16, LILR 7v5, FCAR 1v0
+
+Families detected in both annotation passes:
+  Myotis sodalis           families whose difference changes between passes: 5; families where the SIGN flips: 0 
+  Rhinolophus clivosus     families whose difference changes between passes: 5; families where the SIGN flips: 0 
+  Eidolon dupreanum        families whose difference changes between passes: 5; families where the SIGN flips: 0 
+
+======================================================================
+2. SUMMED NORMALIZED DEPTH PER FAMILY vs ANNOTATED LOCUS COUNT
+======================================================================
+  Rhinolophus clivosus   MHC-I    hap1 assembled= 18 implied=  61.5 (x3.42)
+  Myotis sodalis         LILR     hap1 assembled= 20 implied=  50.2 (x2.51)
+  Myotis sodalis         MHC-I    hap2 assembled= 40 implied=  51.1 (x1.28)
+  Myotis sodalis         LILR     hap2 assembled= 23 implied=  29.9 (x1.3)
+  Rhinolophus clivosus   LILR     hap2 assembled=  9 implied=  10.8 (x1.2)
+  Rhinolophus clivosus   KLRC     hap1 assembled=  9 implied=  10.5 (x1.16)
+  Rhinolophus clivosus   NCR2     hap2 assembled=  3 implied=   4.4 (x1.45)
+  Eidolon dupreanum      TAP2     hap2 assembled=  3 implied=   4.2 (x1.39)
+  Eidolon dupreanum      MHC-I    hap1 assembled= 19 implied=  20.2 (x1.06)
+  Rhinolophus clivosus   CLEC4E   hap1 assembled=  1 implied=   2.1 (x2.13)
+  Eidolon dupreanum      KLRD1    hap1 assembled= 10 implied=  10.9 (x1.09)
+  Rhinolophus clivosus   KLRF     hap1 assembled=  2 implied=   2.9 (x1.46)
+  summed normalized depth within two units: 108 of 115
+  absolute deviation above two units: 4 excesses and 3 deficits
+
+======================================================================
+3. EXPLORATORY DEPTH SCREEN (nominal BH q < 0.05)
+======================================================================
+Myotis sodalis           loci tested=199 centre(log2)=+0.057 robust sd=0.482 screen flags (nominal q < 0.05)=13
+Rhinolophus clivosus     loci tested=129 centre(log2)=+0.050 robust sd=0.584 screen flags (nominal q < 0.05)=19
+Eidolon dupreanum        loci tested=144 centre(log2)=-0.168 robust sd=0.548 screen flags (nominal q < 0.05)=13
+  fixed all-primary corridor vs MAPQ ≥20 BH labels: 395/472
+  fixed corridor and BH labels both on MAPQ ≥20: 415/472
+  mixed-column calls (BH, all-primary label): {('no', 'about_1x'): 378, ('no', 'about_2x'): 28, ('no', 'below_1x'): 21, ('yes', 'below_1x'): 10, ('yes', 'about_2x'): 5, ('yes', 'about_1x'): 28, ('yes', 'near_0'): 2}
+  matched-column calls (BH, inside corridor): {('no', True): 370, ('no', False): 57, ('yes', False): 45}
+  pair1: zero MAPQ ≥20 depth 2/200 measured, 2/199 tested
+  pair2: zero MAPQ ≥20 depth 16/132 measured, 13/129 tested
+  pair3: zero MAPQ ≥20 depth 5/144 measured, 5/144 tested
+
+======================================================================
+4. CONFOUNDERS: GC CONTENT AND LOCUS LENGTH vs DEPTH RATIO
+======================================================================
+Myotis sodalis           n=197  GC vs log2(ratio): r=-0.097 p=0.175   log10(length) vs log2(ratio): r=+0.353 p=3.59e-07
+Rhinolophus clivosus     n=116  GC vs log2(ratio): r=+0.122 p=0.192   log10(length) vs log2(ratio): r=-0.066 p=0.482
+Eidolon dupreanum        n=139  GC vs log2(ratio): r=+0.033 p=0.702   log10(length) vs log2(ratio): r=+0.075 p=0.38
+
+======================================================================
+5. NEAR-IDENTICAL PARALOGS vs THE REST
+======================================================================
+Myotis sodalis           paralog>=95%: n= 24 median ratio=1.07 | others: n=175 median=1.03 | Mann-Whitney p=0.724
+Rhinolophus clivosus     paralog>=95%: n= 11 median ratio=0.80 | others: n=118 median=0.98 | Mann-Whitney p=0.96
+Eidolon dupreanum        paralog>=95%: n= 10 median ratio=0.46 | others: n=134 median=0.89 | Mann-Whitney p=0.0619
+
+======================================================================
+6. WILSON 95% CONFIDENCE INTERVALS FOR THE PROPORTIONS IN THE TEXT
+======================================================================
+  raw difference rows: 289 total = 117 locus + 170 gap/indel + 2 other
+  same family/status after re-search: 91/117, multiple landings 43, outside paired window 38, either flag 61
+  rows with same family/status on re-search         91/117 =  77.8%  95% CI 69.4-84.4%
+  curated difference rows supported by reads        14/ 15 =  93.3%  95% CI 70.2-98.8%
+  all-primary depth ratios inside the fixed corridor 406/472 =  86.0%  95% CI 82.6-88.9%
+  agreement with same MAPQ ≥20 ratios              415/472 =  87.9%  95% CI 84.7-90.6%
+  agreement with mixed depth columns               395/472 =  83.7%  95% CI 80.1-86.7%
+  start-codon flags with upstream junctions         14/ 50 =  28.0%  95% CI 17.5-41.7%
+  start-codon flags with separate RNA coverage      36/ 50 =  72.0%  95% CI 58.3-82.5%
+  start-codon flags with RefSeq ATG at residue 1    28/ 50 =  56.0%  95% CI 42.3-68.8%
+
+Tables written to /Users/varvarauhina/bat-nk-pilot/rerun_2026-11-12/manuscript/derived

@@ -1,0 +1,26 @@
+pair1: relative ncbi_dataset: 120 proteins of pilot families (B2M=1, CD1=10, CLEC12A=3, CLEC2D=7, CLEC4E=3, KLRA=1, KLRC=3, KLRD1=3, KLRF=2, KLRG2=7, KLRK1=1, LILR=11, MHC-I=52, MR1=5, NCR1=2, NCR2=4, NCR3=1, TAP1=2, TAP2=2)
+intact loci 44, in windows 42; bat-query verdicts: ATG_from_residue_1=36, non_ATG=6
+loci failing the human/mouse start-codon check (23): ATG_from_residue_1=19, non_ATG=4
+  hap1 hap1_L022 TAP1 pilot:non-ATG(ACG) -> bat XP_036212308.1 q_start=1 ident=0.99 codon=ATG -> ATG_from_residue_1
+  hap1 hap1_L042 MHC-I pilot:not_aligned(q_start=4) -> bat XP_036162557.1 q_start=1 ident=0.84 codon=ACC -> non_ATG(ACC;in-frame_ATG_7_codons_downstream)
+  hap1 hap1_L044 MHC-I pilot:non-ATG(CTG) -> bat XP_036162485.1 q_start=1 ident=0.84 codon=ATG -> ATG_from_residue_1
+  hap1 hap1_L066 LILR pilot:not_aligned(q_start=29) -> bat XP_036162435.1 q_start=1 ident=0.93 codon=ATG -> ATG_from_residue_1
+  hap1 hap1_L069 LILR pilot:non-ATG(CCC) -> bat XP_036162435.1 q_start=1 ident=0.77 codon=ATG -> ATG_from_residue_1
+  hap1 hap1_L072 LILR pilot:not_aligned(q_start=23) -> bat XP_036162435.1 q_start=1 ident=0.78 codon=ATG -> ATG_from_residue_1
+  hap1 hap1_L079 LILR pilot:not_aligned(q_start=15) -> bat XP_036162435.1 q_start=1 ident=0.79 codon=ATA -> non_ATG(ATA;no_in-frame_ATG_within_20_codons_up/15_down)
+  hap1 hap1_L080 LILR pilot:non-ATG(CTG) -> bat XP_036162435.1 q_start=1 ident=0.84 codon=ATG -> ATG_from_residue_1
+  hap1 hap1_L082 LILR pilot:not_aligned(q_start=11) -> bat XP_036162435.1 q_start=1 ident=0.81 codon=ATG -> ATG_from_residue_1
+  hap1 hap1_L085 MR1 pilot:non-ATG(TTA) -> bat XP_036198550.1 q_start=1 ident=0.97 codon=ATG -> ATG_from_residue_1
+  hap1 hap1_L090 CD1 pilot:not_aligned(q_start=30) -> bat XP_036199551.1 q_start=1 ident=0.93 codon=ATG -> ATG_from_residue_1
+  hap2 hap2_L007 KLRD1 pilot:non-ATG(TCG) -> bat XP_036157687.1 q_start=1 ident=0.83 codon=TCG -> non_ATG(TCG;no_in-frame_ATG_within_20_codons_up/15_down)
+  hap2 hap2_L033 TAP1 pilot:non-ATG(ACG) -> bat XP_036212308.1 q_start=1 ident=0.98 codon=ATG -> ATG_from_residue_1
+  hap2 hap2_L054 MHC-I pilot:non-ATG(CTG) -> bat XP_036162485.1 q_start=1 ident=0.85 codon=ATG -> ATG_from_residue_1
+  hap2 hap2_L070 LILR pilot:not_aligned(q_start=29) -> bat XP_036162435.1 q_start=1 ident=0.93 codon=ATG -> ATG_from_residue_1
+  hap2 hap2_L075 LILR pilot:not_aligned(q_start=11) -> bat XP_036162435.1 q_start=1 ident=0.80 codon=ATC -> non_ATG(ATC;no_in-frame_ATG_within_20_codons_up/15_down)
+  hap2 hap2_L080 LILR pilot:non-ATG(CTG) -> bat XP_036162435.1 q_start=1 ident=0.79 codon=ATG -> ATG_from_residue_1
+  hap2 hap2_L083 LILR pilot:non-ATG(CTG) -> bat XP_036162435.1 q_start=1 ident=0.83 codon=ATG -> ATG_from_residue_1
+  hap2 hap2_L086 LILR pilot:not_aligned(q_start=28) -> bat XP_036162636.1 q_start=1 ident=0.69 codon=ATG -> ATG_from_residue_1
+  hap2 hap2_L097 MR1 pilot:non-ATG(TTA) -> bat XP_036198550.1 q_start=1 ident=0.97 codon=ATG -> ATG_from_residue_1
+  hap2 hap2_L107 CD1 pilot:not_aligned(q_start=27) -> bat XP_036199551.1 q_start=1 ident=0.96 codon=ATG -> ATG_from_residue_1
+  hap2 hap2_L108 CD1 pilot:not_aligned(q_start=17) -> bat XP_036199551.1 q_start=1 ident=0.90 codon=ATG -> ATG_from_residue_1
+  hap2 hap2_L109 CD1 pilot:not_aligned(q_start=30) -> bat XP_036199551.1 q_start=1 ident=0.94 codon=ATG -> ATG_from_residue_1

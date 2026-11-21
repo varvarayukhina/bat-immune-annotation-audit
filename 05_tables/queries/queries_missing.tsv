@@ -1,0 +1,46 @@
+taxon	symbol	reason
+Mmusculus	Klrc4	symbol endpoint returned no gene
+Mmusculus	Klrf1	symbol endpoint returned no gene
+Mmusculus	Klrf2	symbol endpoint returned no gene
+Mmusculus	Kir2dl1	symbol endpoint returned no gene
+Mmusculus	Kir2dl4	symbol endpoint returned no gene
+Mmusculus	Kir3dl3	symbol endpoint returned no gene
+Mmusculus	Kir2ds4	symbol endpoint returned no gene
+Mmusculus	Lilrb1	symbol endpoint returned no gene
+Mmusculus	Lilrb2	symbol endpoint returned no gene
+Mmusculus	Lilra2	symbol endpoint returned no gene
+Mmusculus	Ncr2	symbol endpoint returned no gene
+Mmusculus	Fcar	symbol endpoint returned no gene
+Mmusculus	Hla-a	symbol endpoint returned no gene
+Mmusculus	Hla-b	symbol endpoint returned no gene
+Mmusculus	Hla-c	symbol endpoint returned no gene
+Mmusculus	Hla-e	symbol endpoint returned no gene
+Mmusculus	Hla-f	symbol endpoint returned no gene
+Mmusculus	Hla-g	symbol endpoint returned no gene
+Mmusculus	Ncr3	gene 667612 Ncr3-ps (PSEUDO): zip has no protein.faa
+Mmusculus	H2-K1	NOTE: symbol itself WAS retrieved; this row is an extra alias-matched gene without protein: gene 630499 H2-K2 (PSEUDO): zip has no protein.faa
+Mmusculus	Klra9	NOTE: symbol itself WAS retrieved; this row is an extra alias-matched gene without protein: gene 115489350 Gm52487 (ncRNA): zip has no protein.faa
+Raegyptiacus	KLRC1	symbol endpoint returned no gene
+Raegyptiacus	KLRC2	symbol endpoint returned no gene
+Raegyptiacus	KLRC3	symbol endpoint returned no gene
+Raegyptiacus	KLRC4	symbol endpoint returned no gene
+Raegyptiacus	KLRK1	symbol endpoint returned no gene
+Raegyptiacus	KIR2DL1	symbol endpoint returned no gene
+Raegyptiacus	KIR2DL4	symbol endpoint returned no gene
+Raegyptiacus	KIR3DL1	symbol endpoint returned no gene
+Raegyptiacus	KIR3DL3	symbol endpoint returned no gene
+Raegyptiacus	KIR2DS4	symbol endpoint returned no gene
+Raegyptiacus	LILRB1	symbol endpoint returned no gene
+Raegyptiacus	LILRB2	symbol endpoint returned no gene
+Raegyptiacus	LILRB4	symbol endpoint returned no gene
+Raegyptiacus	LILRA2	symbol endpoint returned no gene
+Raegyptiacus	LILRA5	symbol endpoint returned no gene
+Raegyptiacus	FCAR	symbol endpoint returned no gene
+Raegyptiacus	HLA-A	symbol endpoint returned no gene
+Raegyptiacus	HLA-B	symbol endpoint returned no gene
+Raegyptiacus	HLA-C	symbol endpoint returned no gene
+Raegyptiacus	HLA-E	symbol endpoint returned no gene
+Raegyptiacus	HLA-F	symbol endpoint returned no gene
+Raegyptiacus	HLA-G	symbol endpoint returned no gene
+Raegyptiacus	MR1	symbol endpoint returned no gene
+Raegyptiacus	CD1D	symbol endpoint returned no gene

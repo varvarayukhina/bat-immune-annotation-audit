@@ -1,0 +1,31 @@
+pair3: PAF records 386399, kept (primary, block>=2000, de<=0.02) 8346
+  hap1|hap1_LRC_1|CM185965.1:110771242-111329530 median depth 6.0 reads 269
+  hap1|hap1_MHC-I_1|CM185961.1:91196561-93220852 median depth 7.0 reads 1129
+  hap1|hap1_MHC-I_2|CM185965.1:91389776-92205441 median depth 7.0 reads 447
+  hap1|hap1_MHC-I_3|CM185975.1:51993803-52826209 median depth 8.0 reads 454
+  hap1|hap1_MHC-I_4|CM185975.1:48545670-48889605 median depth 7.0 reads 181
+  hap1|hap1_MHC-I_5|CM185963.1:121119414-121322829 median depth 8.0 reads 132
+  hap1|hap1_MHC-I_6|CM185966.1:125451593-125671206 median depth 4.0 reads 71
+  hap1|hap1_MHC-I_7|CM185968.1:80482173-80686505 median depth 8.0 reads 130
+  hap1|hap1_MHC-I_8|CM185975.1:16391676-16606499 median depth 6.0 reads 125
+  hap1|hap1_MHC-I_9|CM185975.1:26604120-26806039 median depth 5.0 reads 70
+  hap1|hap1_NKC_1|CM185962.1:22504656-24554611 median depth 8.0 reads 1239
+  hap2|hap2_LRC_1|CM185948.1:111018502-111576517 median depth 6.0 reads 249
+  hap2|hap2_MHC-I_3|CM185944.1:88761768-89594005 median depth 9.0 reads 502
+  hap2|hap2_MHC-I_2|CM185948.1:91622122-92310265 median depth 8.0 reads 382
+  hap2|hap2_MHC-I_4|CM185958.1:47434538-47778417 median depth 6.0 reads 153
+  hap2|hap2_MHC-I_1|CM185944.1:93388099-95422620 median depth 7.0 reads 1024
+  hap2|hap2_MHC-I_5|CM185946.1:122277940-122481357 median depth 9.0 reads 133
+  hap2|hap2_MHC-I_6|CM185949.1:125293352-125512964 median depth 5.0 reads 73
+  hap2|hap2_MHC-I_7|CM185951.1:80393179-80597510 median depth 7.0 reads 143
+  hap2|hap2_MHC-I_8|CM185958.1:15269862-15484673 median depth 7.0 reads 107
+  hap2|hap2_MHC-I_9|CM185958.1:25474270-25676198 median depth 6.0 reads 83
+  hap2|hap2_NKC_1|CM185945.1:22471646-24506869 median depth 9.0 reads 1250
+locus: about_1x=129, below_1x=9, about_2x=6, outside_windows=4
+hap_only_locus: 
+absent_gap: 
+>=98% paralog loci: hap1 hap1_L009 TAP2 ratio=1.27 mq20=1.27 span=2 -> about_1x:supported_as_assembled; hap1 hap1_L010 TAP2 ratio=0.59 mq20=0.59 span=0 -> about_1x:supported_as_assembled; hap1 hap1_L068 CD1 ratio=1.49 mq20=0.03 span=0 -> about_1x:supported_as_assembled; hap1 hap1_L070 CD1 ratio=0.54 mq20=0.44 span=2 -> below_1x:reads_split_over_copies; hap2 hap2_L005 CD1 ratio=1.14 mq20=0.48 span=0 -> about_1x:supported_as_assembled; hap2 hap2_L006 CD1 ratio=0.88 mq20=0.30 span=1 -> about_1x:supported_as_assembled; hap2 hap2_L014 TAP2 ratio=1.12 mq20=1.12 span=2 -> about_1x:supported_as_assembled; hap2 hap2_L015 TAP2 ratio=2.36 mq20=2.36 span=7 -> about_2x:sequence_present_in_both_haplotypes; hap2 hap2_L072 CD1 ratio=1.64 mq20=0.00 span=0 -> about_1x:supported_as_assembled; hap2 hap2_L073 CD1 ratio=1.12 mq20=0.16 span=0 -> about_1x:supported_as_assembled
+variant sites: variant_supported_by_reads_of_hap1=3
+  hap1_L070|hap2_L072 CD1|CD1 hap1=partial,hap2=intact CDS6:G>A@13346->stop(TGA) | better hap2: n=13(mq20 0) match=13 sub=0 ins=0 del=0 [] | alt hap1: n=5(mq20 4) match=5 sub=0 ins=0 del=0 [] -> variant_supported_by_reads_of_hap1
+  hap1_L027|hap2_L029 KLRD1|KLRD1 hap1=pseudogene-like,hap2=intact CDS5:C>T@13679->stop(TGA) | better hap2: n=9(mq20 7) match=9 sub=0 ins=0 del=0 [] | alt hap1: n=10(mq20 10) match=10 sub=0 ins=0 del=0 [] -> variant_supported_by_reads_of_hap1
+  hap2_L032 KLRD1 hap2=intact,hap1=pseudogene-like splice_site:C>T@9999 | better hap2: n=16(mq20 16) match=16 sub=0 ins=0 del=0 [] | alt hap1: n=11(mq20 11) match=11 sub=0 ins=0 del=0 [] -> variant_supported_by_reads_of_hap1

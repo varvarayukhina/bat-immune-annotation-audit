@@ -1,0 +1,45 @@
+pair1: RNA PAF records hap1 23834390 kept 122590; hap2 23880611 kept 114813
+intact: transcript_extends_upstream_of_model_start=42, outside_windows=2
+partial: transcript_extends_upstream_of_model_start=123
+pseudogene-like: transcript_extends_upstream_of_model_start=23, outside_windows=3, upstream_exon_spliced_into_model_start=1
+uncertain: transcript_extends_upstream_of_model_start=10, upstream_exon_spliced_into_model_start=1
+intact loci with a start-codon problem (25): transcript_extends_upstream_of_model_start=25
+  hap1 hap1_L022 TAP1 non-ATG(ACG) reads=93 spliced=66 over_start=59 upstream100=59 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap1 hap1_L042 MHC-I not_aligned(q_start=4) reads=71 spliced=18 over_start=37 upstream100=18 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap1 hap1_L044 MHC-I non-ATG(CTG) reads=153 spliced=129 over_start=129 upstream100=125 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap1 hap1_L066 LILR not_aligned(q_start=29) reads=120 spliced=104 over_start=83 upstream100=83 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap1 hap1_L069 LILR non-ATG(CCC) reads=47 spliced=45 over_start=44 upstream100=44 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap1 hap1_L071 LILR not_aligned(q_start=10) reads=72 spliced=31 over_start=23 upstream100=23 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap1 hap1_L072 LILR not_aligned(q_start=23) reads=27 spliced=27 over_start=25 upstream100=25 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap1 hap1_L079 LILR not_aligned(q_start=15) reads=99 spliced=54 over_start=47 upstream100=45 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap1 hap1_L080 LILR non-ATG(CTG) reads=53 spliced=40 over_start=38 upstream100=38 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap1 hap1_L082 LILR not_aligned(q_start=11) reads=249 spliced=54 over_start=27 upstream100=29 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap1 hap1_L085 MR1 non-ATG(TTA) reads=29 spliced=11 over_start=6 upstream100=6 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap1 hap1_L090 CD1 not_aligned(q_start=30) reads=41 spliced=41 over_start=41 upstream100=41 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap2 hap2_L007 KLRD1 non-ATG(TCG) reads=76 spliced=65 over_start=64 upstream100=63 junction_into_start=1 -> transcript_extends_upstream_of_model_start
+  hap2 hap2_L033 TAP1 non-ATG(ACG) reads=100 spliced=72 over_start=66 upstream100=66 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap2 hap2_L054 MHC-I non-ATG(CTG) reads=172 spliced=156 over_start=156 upstream100=156 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap2 hap2_L070 LILR not_aligned(q_start=29) reads=118 spliced=72 over_start=42 upstream100=42 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap2 hap2_L075 LILR not_aligned(q_start=11) reads=79 spliced=21 over_start=11 upstream100=11 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap2 hap2_L080 LILR non-ATG(CTG) reads=62 spliced=31 over_start=24 upstream100=19 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap2 hap2_L081 LILR not_aligned(q_start=5) reads=40 spliced=35 over_start=31 upstream100=33 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap2 hap2_L083 LILR non-ATG(CTG) reads=91 spliced=37 over_start=23 upstream100=23 junction_into_start=1 -> transcript_extends_upstream_of_model_start
+  hap2 hap2_L086 LILR not_aligned(q_start=28) reads=67 spliced=46 over_start=30 upstream100=30 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap2 hap2_L097 MR1 non-ATG(TTA) reads=79 spliced=6 over_start=3 upstream100=3 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap2 hap2_L107 CD1 not_aligned(q_start=27) reads=102 spliced=101 over_start=100 upstream100=100 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap2 hap2_L108 CD1 not_aligned(q_start=17) reads=65 spliced=62 over_start=62 upstream100=62 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+  hap2 hap2_L109 CD1 not_aligned(q_start=30) reads=33 spliced=33 over_start=33 upstream100=33 junction_into_start=0 -> transcript_extends_upstream_of_model_start
+expressed loci by family (any RNA reads >= 3): B2M=2/2, CD1=39/39, CLEC12A=2/2, CLEC2D=5/5, CLEC4E=2/2, KIR=2/2, KLRC=6/6, KLRD1=2/2, KLRF=4/4, KLRG2=0/4, KLRK1=5/5, LILR=43/43, MHC-I=74/74, MR1=2/2, NCR1=2/2, NCR2=0/1, NCR3=2/2, TAP1=2/2, TAP2=6/6
+variant sites: no_RNA_coverage=12
+  hap1_L068 LILR hap1=partial,hap2=intact CDS2:G>T@10582->stop(TAG) | better hap2: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] | alt hap1: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] -> no_RNA_coverage
+  hap1_L077|hap2_L080 LILR|LILR hap1=partial,hap2=intact CDS4:C>T@11058->stop(TAG) | better hap2: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] | alt hap1: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] -> no_RNA_coverage
+  hap2_L088 LILR hap2=partial,hap1=intact CDS6:G>A@17927->stop(TAG) | better hap1: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] | alt hap2: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] -> no_RNA_coverage
+  hap1_L047|hap2_L058 MHC-I|MHC-I hap1=pseudogene-like,hap2=partial splice_site:G>A@10014 | better hap2: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] | alt hap1: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] -> no_RNA_coverage
+  hap1_L047|hap2_L058 MHC-I|MHC-I hap1=pseudogene-like,hap2=partial CDS1:ins1@10101 | better hap2: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] | alt hap1: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] -> no_RNA_coverage
+  hap1_L047|hap2_L058 MHC-I|MHC-I hap1=pseudogene-like,hap2=partial CDS1:del1@10119 | better hap2: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] | alt hap1: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] -> no_RNA_coverage
+  hap1_L047|hap2_L058 MHC-I|MHC-I hap1=pseudogene-like,hap2=partial CDS1:ins1@10156 | better hap2: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] | alt hap1: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] -> no_RNA_coverage
+  hap1_L028|hap2_L040 CD1|CD1 hap1=partial,hap2=pseudogene-like CDS2:G>A@10624->stop(TGA) | better hap1: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] | alt hap2: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] -> no_RNA_coverage
+  hap1_L032|hap2_L043 CD1|CD1 hap1=pseudogene-like,hap2=intact CDS4:del1@11347(homopolymer5) | better hap2: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] | alt hap1: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] -> no_RNA_coverage
+  hap1_L032|hap2_L043 CD1|CD1 hap1=pseudogene-like,hap2=intact CDS5:ins1@11865 | better hap2: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] | alt hap1: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] -> no_RNA_coverage
+  hap2_L102 CD1 hap2=pseudogene-like,hap1=partial CDS1:G>A@10075->stop(TGA) | better hap1: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] | alt hap2: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] -> no_RNA_coverage
+  hap1_L042|hap2_L052 MHC-I|MHC-I hap1=intact,hap2=pseudogene-like CDS1:del4@10197 | better hap1: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] | alt hap2: n=0(mq20 0) match=0 sub=0 ins=0 del=0 [] -> no_RNA_coverage

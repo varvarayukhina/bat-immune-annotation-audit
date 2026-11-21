@@ -1,0 +1,30 @@
+CURATION SUMMARY pair1
+
+hap1: 93 loci; realignment consistent with pilot status: 75; pilot intact 20, pass all gene-model checks (ATG, GT-AG/GC-AG, terminal stop, no internal stop): 7
+  back-search: confirmed=84, no=5, relabel=4
+  relabel suggestions: CLEC2D->other(CD69) x1; CLEC2D->other(CLEC2A) x1; CLEC2D->other(Fcer2) x1; TAP2->other(ABCB9) x1
+  loci with a >=98% identical paralog (same haplotype, same family): LILR=2
+hap2: 112 loci; realignment consistent with pilot status: 98; pilot intact 24, pass all gene-model checks (ATG, GT-AG/GC-AG, terminal stop, no internal stop): 10
+  back-search: confirmed=104, no=4, relabel=4
+  relabel suggestions: CLEC2D->other(CD69) x1; CLEC2D->other(Fcer2) x1; NCR2->other(TREML4) x1; TAP2->other(ABCB9) x1
+  loci with a >=98% identical paralog (same haplotype, same family): CD1=6, MHC-I=2
+
+pilot difference rows: 181; of these 0 are the same event repeated in another window pair (not re-examined twice)
+locus-level differences re-examined: 54
+   31  same_status_at_sensitive_realignment(sensitivity_artefact_of_the_pilot_call)
+    5  status_differs_confirmed:hap1=partial_vs_hap2=intact
+    4  same_status_at_sensitive_realignment(call_difference_is_a_threshold/sensitivity_artefact)
+    4  status_differs_confirmed:hap2=partial_vs_hap1=intact
+    3  status_differs_confirmed:hap1=partial_vs_hap2=pseudogene-like
+    2  status_differs_confirmed:hap1=intact_vs_hap2=partial
+    1  status_differs_confirmed:hap1=pseudogene-like_vs_hap2=partial
+    1  status_differs_confirmed:hap1=pseudogene-like_vs_hap2=intact
+    1  status_differs_confirmed:hap2=pseudogene-like_vs_hap1=partial
+    1  status_differs_confirmed:hap1=intact_vs_hap2=pseudogene-like
+    1  locus_sequence_absent_from_hap2_between_aligned_flanks
+gaps/indels >=5 kb re-mapped (unique): 126
+   74  present_in_paired_window(window_alignment_missed_it)
+   20  present_elsewhere_in_hap2
+   18  present_elsewhere_in_hap1
+    8  absent_from_hap2
+    6  absent_from_hap1

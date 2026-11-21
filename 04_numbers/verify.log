@@ -1,0 +1,47 @@
+2026-11-12 20:53:27 VERIFY_START
+2026-11-12 21:13:13 RNA_CHECK_START
+2026-11-12 21:13:13 RNA chain not running and not finished; continuing with what is there
+2026-11-12 21:13:13 RNA_CHECK pair2
+2026-11-12 21:46:32 RNA_READY
+2026-11-12 21:46:32 HIFI_STREAM pair3 SRR39556278_subreads.fastq.gz limit=15000000000
+2026-11-12 21:46:35 HIFI_START SRR39556278 limit=15000000000 -> /Users/varvarauhina/bat-nk-pilot/rerun_2026-11-12/verify/pair3/hifi/SRR39556278.paf
+2026-11-13 04:05:50 RNA_CHECK_OK pair2
+2026-11-13 04:05:50 RNA_CHECK pair1
+2026-11-13 06:40:04 HIFI_CUT pair3 by plan (shutdown at 08:00): pstream 11.27 GB of 15.00 in 525.0 min (0.36 MB/s)
+2026-11-13 06:44:32 HIFI_DONE SRR39556278 pipestatus=143
+1
+0
+0
+0 paf_lines=  386399
+2026-11-13 06:44:34 HIFI_CHECK pair3
+2026-11-13 06:44:49 HIFI_CHECK_OK pair3
+2026-11-13 06:44:49 DISK_LOW 3G, stop
+2026-11-13 06:45:09 HIFI_QUEUE_STOPPED pair1 pair2 deferred to the evening run (full volume, faster stream)
+2026-11-13 06:45:09 VERIFY_DONE partial=pair3_only
+2026-11-14 01:08:08 RNA_CHECK_FAILED pair1 (see logs/pair1.rna_check.log)
+2026-11-14 01:08:08 RNA_CHECK pair3
+2026-11-15 02:23:46 RNA_CHECK_RERUN pair1 (load filter: reads within 5 kb of a locus; first run was killed at 24 M records / swap 0)
+2026-11-15 02:25:02 VERIFY_START
+2026-11-15 02:25:02 RNA_READY
+2026-11-15 02:25:02 HIFI_SKIP pair3 (already done)
+2026-11-15 02:25:02 HIFI_STREAM pair1 SRR38296513_subreads.fastq.gz limit=18000000000
+2026-11-15 02:25:03 HIFI_START SRR38296513 limit=18000000000 -> /Users/varvarauhina/bat-nk-pilot/rerun_2026-11-12/verify/pair1/hifi/SRR38296513.paf
+2026-11-15 06:57:58 RNA_CHECK_OK pair3
+2026-11-15 06:57:58 RNA_CHECK_DONE
+2026-11-15 13:31:06 HIFI_DONE SRR38296513 pipestatus=0
+1
+0
+0
+0 paf_lines= 2572740
+2026-11-15 13:31:08 HIFI_CHECK pair1
+2026-11-15 13:31:36 HIFI_CHECK_OK pair1
+2026-11-15 13:31:36 HIFI_STREAM pair2 SRR36951662_subreads.fastq.gz limit=20000000000
+2026-11-15 13:31:36 HIFI_START SRR36951662 limit=20000000000 -> /Users/varvarauhina/bat-nk-pilot/rerun_2026-11-12/verify/pair2/hifi/SRR36951662.paf
+2026-11-15 17:29:26 HIFI_DONE SRR36951662 pipestatus=0
+1
+0
+0
+0 paf_lines=  705323
+2026-11-15 17:29:27 HIFI_CHECK pair2
+2026-11-15 17:29:38 HIFI_CHECK_OK pair2
+2026-11-15 17:29:38 VERIFY_DONE

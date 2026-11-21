@@ -1,0 +1,13 @@
+diff_index	locus	family	classes	better_hap	alt_hap	variant	rna_at_better_copy	rna_at_alt_copy	rna_verdict
+12	hap1_L068	LILR	hap1=partial,hap2=intact	hap2	hap1	CDS2:G>T@10582->stop(TAG)	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	no_RNA_coverage
+17	hap1_L077|hap2_L080	LILR|LILR	hap1=partial,hap2=intact	hap2	hap1	CDS4:C>T@11058->stop(TAG)	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	no_RNA_coverage
+22	hap2_L088	LILR	hap2=partial,hap1=intact	hap1	hap2	CDS6:G>A@17927->stop(TAG)	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	no_RNA_coverage
+48	hap1_L047|hap2_L058	MHC-I|MHC-I	hap1=pseudogene-like,hap2=partial	hap2	hap1	splice_site:G>A@10014	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	no_RNA_coverage
+48	hap1_L047|hap2_L058	MHC-I|MHC-I	hap1=pseudogene-like,hap2=partial	hap2	hap1	CDS1:ins1@10101	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	no_RNA_coverage
+48	hap1_L047|hap2_L058	MHC-I|MHC-I	hap1=pseudogene-like,hap2=partial	hap2	hap1	CDS1:del1@10119	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	no_RNA_coverage
+48	hap1_L047|hap2_L058	MHC-I|MHC-I	hap1=pseudogene-like,hap2=partial	hap2	hap1	CDS1:ins1@10156	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	no_RNA_coverage
+61	hap1_L028|hap2_L040	CD1|CD1	hap1=partial,hap2=pseudogene-like	hap1	hap2	CDS2:G>A@10624->stop(TGA)	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	no_RNA_coverage
+63	hap1_L032|hap2_L043	CD1|CD1	hap1=pseudogene-like,hap2=intact	hap2	hap1	CDS4:del1@11347(homopolymer5)	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	no_RNA_coverage
+63	hap1_L032|hap2_L043	CD1|CD1	hap1=pseudogene-like,hap2=intact	hap2	hap1	CDS5:ins1@11865	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	no_RNA_coverage
+75	hap2_L102	CD1	hap2=pseudogene-like,hap1=partial	hap1	hap2	CDS1:G>A@10075->stop(TGA)	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	no_RNA_coverage
+152	hap1_L042|hap2_L052	MHC-I|MHC-I	hap1=intact,hap2=pseudogene-like	hap1	hap2	CDS1:del4@10197	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	n=0(mq20 0) match=0 sub=0 ins=0 del=0 []	no_RNA_coverage

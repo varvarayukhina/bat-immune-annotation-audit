@@ -1,0 +1,57 @@
+=== pair1 Myotis sodalis
+reproduced: main yes, sensitive yes
+hap1: loci 93, same status on +-5kb realignment 75; intact 20 -> full gene model 7 (start codon only reason: 10); back-search confirmed 84, relabel 4, ambiguous 0, no protein 5; >=98% paralog 2; non-canonical splice 0
+hap2: loci 112, same status on +-5kb realignment 98; intact 24 -> full gene model 10 (start codon only reason: 11); back-search confirmed 104, relabel 4, ambiguous 0, no protein 4; >=98% paralog 8; non-canonical splice 4
+relabels: hap1 CLEC2D->CD69 x1; hap1 CLEC2D->CLEC2A x1; hap1 CLEC2D->Fcer2 x1; hap1 TAP2->ABCB9 x1; hap2 CLEC2D->CD69 x1; hap2 CLEC2D->Fcer2 x1; hap2 NCR2->TREML4 x1; hap2 TAP2->ABCB9 x1
+differences: pilot rows 181 (dup 0), locus-level examined 54:
+    35 artefact_sensitivity_or_threshold
+     9 status_differs_no_disruptive_variant_found(threshold_effect_likely)
+     8 status_differs_with_disruptive_variant
+     1 status_differs_large_indel_in_gene(32236bp)
+     1 locus_absent_from_other_haplotype
+   by family (locus-level): MHC-I=22, LILR=13, CD1=12, KLRC=4, CLEC2D=1, KLRD1=1, KLRK1=1
+   artefact share by family: MHC-I=19/22, LILR=4/13, CD1=8/12, KLRC=3/4, KLRD1=0/1, CLEC2D=0/1, KLRK1=1/1
+gaps >=5kb unique 126: present_in_paired_window=74, present_elsewhere_in_hap2=20, present_elsewhere_in_hap1=18, absent_from_hap2=8, absent_from_hap1=6; bp truly absent 868894
+   >=98% paralogs hap1 LILR: hap1_L065~hap1_L066(100), hap1_L066~hap1_L065(100)
+   >=98% paralogs hap2 CD1: hap2_L099~hap2_L103(99.0), hap2_L100~hap2_L104(98.9), hap2_L101~hap2_L103(98.1), hap2_L102~hap2_L100(98.9), hap2_L103~hap2_L099(99.0), hap2_L104~hap2_L100(98.9)
+   >=98% paralogs hap2 MHC-I: hap2_L023~hap2_L025(98.3), hap2_L025~hap2_L023(98.3)
+non-canonical splice sites: hap2 hap2_L024 MHC-I partial [gt-tc]; hap2 hap2_L038 CD1 partial [gt-ac]; hap2 hap2_L074 LILR pseudogene-like [gt-aa;at-ag]; hap2 hap2_L088 LILR partial [gt-tg]
+
+=== pair2 Rhinolophus clivosus
+reproduced: main yes, sensitive yes
+hap1: loci 72, same status on +-5kb realignment 63; intact 14 -> full gene model 10 (start codon only reason: 4); back-search confirmed 67, relabel 2, ambiguous 1, no protein 2; >=98% paralog 7; non-canonical splice 11
+hap2: loci 64, same status on +-5kb realignment 60; intact 14 -> full gene model 10 (start codon only reason: 4); back-search confirmed 59, relabel 2, ambiguous 1, no protein 2; >=98% paralog 0; non-canonical splice 8
+relabels: hap1 CLEC2D->CLEC2A x1; hap1 LILR->GP6 x1; hap2 CLEC2D->CLEC2A x1; hap2 LILR->GP6 x1
+ambiguous: CLEC2D:ambiguous_other_vs_CLEC2D x2
+differences: pilot rows 42 (dup 0), locus-level examined 13:
+    10 artefact_sensitivity_or_threshold
+     2 status_differs_with_disruptive_variant
+     1 status_differs_no_disruptive_variant_found(threshold_effect_likely)
+   by family (locus-level): LILR=5, MHC-I=4, KLRC=2, NCR2=1, KLRD1=1
+   artefact share by family: LILR=5/5, MHC-I=3/4, KLRC=1/2, NCR2=0/1, KLRD1=1/1
+gaps >=5kb unique 28: present_in_paired_window=8, present_elsewhere_in_hap1=8, present_elsewhere_in_hap2=8, absent_from_hap2=4; bp truly absent 231285
+   >=98% paralogs hap1 LILR: hap1_L053~hap1_L057(100), hap1_L054~hap1_L056(100), hap1_L055~hap1_L057(99.5), hap1_L056~hap1_L054(100), hap1_L057~hap1_L053(100)
+   >=98% paralogs hap1 NCR2: hap1_L004~hap1_L006(99.6), hap1_L006~hap1_L004(99.6)
+non-canonical splice sites: hap1 hap1_L003 MHC-I partial [gt-ac]; hap1 hap1_L007 MHC-I partial [gt-ac]; hap1 hap1_L008 MHC-I partial [gt-ac]; hap1 hap1_L009 MHC-I partial [gt-ac]; hap1 hap1_L010 MHC-I partial [gt-ac]; hap1 hap1_L011 MHC-I pseudogene-like [gt-ac]; hap1 hap1_L018 MHC-I partial [gt-ac]; hap1 hap1_L023 MHC-I partial [ag-ag]; hap1 hap1_L034 KLRD1 pseudogene-like [gt-ac]; hap1 hap1_L054 LILR pseudogene-like [gt-ac]; hap1 hap1_L056 LILR pseudogene-like [gt-ac]; hap2 hap2_L001 MHC-I partial [gt-ac]; hap2 hap2_L004 MHC-I partial [gt-ac]; hap2 hap2_L006 MHC-I partial [gt-ac]; hap2 hap2_L007 MHC-I partial [gt-ac]; hap2 hap2_L008 MHC-I partial [gt-ac]; hap2 hap2_L012 MHC-I partial [gt-ac]; hap2 hap2_L015 MHC-I partial [gt-ac]; hap2 hap2_L020 MHC-I partial [ag-ag]
+KLRD1 loci: hap1 hap1_L034 pseudogene-like back=KLRD1(45.5) second=Klre1(other,64.7/126) paralog=58.9 start=not_aligned(q_start=9); hap1 hap1_L035 partial back=KLRD1(62.3) second=Klre1(other,113/225) paralog=77.1 start=non-ATG(TCT); hap1 hap1_L036 intact back=KLRD1(62.9) second=Klre1(other,113/222) paralog=77.1 start=non-ATG(TCT); hap1 hap1_L037 intact back=KLRD1(61.4) second=Klre1(other,115/222) paralog=74.0 start=non-ATG(TCT); hap2 hap2_L031 partial back=KLRD1(62.9) second=Klre1(other,112/227) paralog=76.5 start=non-ATG(TCT); hap2 hap2_L032 intact back=KLRD1(62.9) second=Klre1(other,113/222) paralog=76.5 start=non-ATG(TCT); hap2 hap2_L033 intact back=KLRD1(61.4) second=Klre1(other,115/222) paralog=74.0 start=non-ATG(TCT)
+
+=== pair3 Eidolon dupreanum
+reproduced: main yes, sensitive yes
+hap1: loci 75, same status on +-5kb realignment 62; intact 24 -> full gene model 16 (start codon only reason: 8); back-search confirmed 68, relabel 2, ambiguous 1, no protein 4; >=98% paralog 4; non-canonical splice 6
+hap2: loci 73, same status on +-5kb realignment 60; intact 26 -> full gene model 17 (start codon only reason: 9); back-search confirmed 67, relabel 2, ambiguous 1, no protein 3; >=98% paralog 6; non-canonical splice 7
+relabels: hap1 CLEC2D->CLEC2A x1; hap1 KIR->LILRA1 x1; hap2 CLEC2D->CLEC2A x1; hap2 KIR->LILRA1 x1
+ambiguous: CLEC2D:ambiguous_other_vs_CLEC2D x2
+differences: pilot rows 66 (dup 0), locus-level examined 50:
+    46 artefact_sensitivity_or_threshold
+     3 status_differs_with_disruptive_variant
+     1 status_differs_no_disruptive_variant_found(threshold_effect_likely)
+   by family (locus-level): CD1=17, MHC-I=15, KLRD1=5, TAP2=4, KLRC=4, NCR3=2, TAP1=2, LILR=1
+   artefact share by family: CD1=16/17, MHC-I=15/15, KLRD1=3/5, KLRC=4/4, TAP2=4/4, NCR3=2/2, TAP1=2/2, LILR=0/1
+gaps >=5kb unique 16: present_in_paired_window=12, present_elsewhere_in_hap2=3, present_elsewhere_in_hap1=1; bp truly absent 0
+   >=98% paralogs hap1 CD1: hap1_L068~hap1_L070(99.7), hap1_L070~hap1_L068(99.7)
+   >=98% paralogs hap1 TAP2: hap1_L009~hap1_L010(98.2), hap1_L010~hap1_L009(98.2)
+   >=98% paralogs hap2 CD1: hap2_L005~hap2_L073(99.7), hap2_L006~hap2_L072(99.7), hap2_L072~hap2_L006(99.7), hap2_L073~hap2_L005(99.7)
+   >=98% paralogs hap2 TAP2: hap2_L014~hap2_L015(98.0), hap2_L015~hap2_L014(98.0)
+non-canonical splice sites: hap1 hap1_L002 MHC-I partial [gt-ac]; hap1 hap1_L004 MHC-I pseudogene-like [gt-ac]; hap1 hap1_L006 MHC-I partial [gt-ac]; hap1 hap1_L018 CLEC2D uncertain [at-ag]; hap1 hap1_L066 CD1 pseudogene-like [gt-tg]; hap1 hap1_L072 CD1 pseudogene-like [gt-aa]; hap2 hap2_L004 CD1 pseudogene-like [gt-aa]; hap2 hap2_L008 MHC-I partial [gt-ac]; hap2 hap2_L023 CLEC2D uncertain [at-ag]; hap2 hap2_L040 KLRC partial [gt-ac]; hap2 hap2_L061 LILR pseudogene-like [at-ag;ca-ag]; hap2 hap2_L062 LILR uncertain [gt-cg]; hap2 hap2_L070 CD1 pseudogene-like [gt-tg]
+KLRD1 loci: hap1 hap1_L022 partial back=KLRD1(62.4) second=Klre1(other,125/234) paralog=70.6 start=non-ATG(TCT); hap1 hap1_L023 intact back=KLRD1(63.3) second=Klre1(other,129/231) paralog=89.3 start=non-ATG(TCG); hap1 hap1_L024 intact back=KLRD1(61.9) second=Klre1(other,124/221) paralog=93.2 start=non-ATG(TCG); hap1 hap1_L025 intact back=KLRD1(60.8) second=Klre1(other,119/219) paralog=87.0 start=non-ATG(TCG); hap1 hap1_L026 intact back=KLRD1(62.5) second=Klre1(other,125/221) paralog=93.2 start=non-ATG(TCT); hap1 hap1_L027 pseudogene-like back=KLRD1(61.0) second=Klre1(other,127/223) paralog=86.4 start=non-ATG(TCG); hap1 hap1_L028 intact back=KLRD1(56.8) second=Klre1(other,124/204) paralog=87.5 start=non-ATG(TCT); hap1 hap1_L029 partial back=KLRD1(59.1) second=Klre1(other,121/209) paralog=83.1 start=non-ATG(TCT); hap1 hap1_L030 intact back=KLRD1(61.6) second=Klre1(other,131/222) paralog=83.6 start=non-ATG(TCG); hap1 hap1_L031 partial back=KLRD1(61.0) second=Klre1(other,116/206) paralog=83.1 start=non-ATG(TCG); hap2 hap2_L027 partial back=KLRD1(62.4) second=Klre1(other,125/234) paralog=70.6 start=non-ATG(TCT); hap2 hap2_L028 intact back=KLRD1(63.3) second=Klre1(other,123/227) paralog=85.3 start=non-ATG(TCG); hap2 hap2_L029 intact back=KLRD1(59.9) second=Klre1(other,128/223) paralog=91.3 start=non-ATG(TCG); hap2 hap2_L030 intact back=KLRD1(58.3) second=Klre1(other,125/204) paralog=93.6 start=not_aligned(q_start=5); hap2 hap2_L031 intact back=KLRD1(55.9) second=Klre1(other,119/202) paralog=93.6 start=non-ATG(TCT); hap2 hap2_L032 intact back=KLRD1(56.6) second=Klre1(other,122/209) paralog=87.1 start=not_aligned(q_start=6); hap2 hap2_L033 partial back=KLRD1(58.5) second=Klre1(other,119/206) paralog=83.1 start=non-ATG(TCT); hap2 hap2_L034 intact back=KLRD1(61.6) second=Klre1(other,131/222) paralog=85.3 start=non-ATG(TCG); hap2 hap2_L035 intact back=KLRD1(62.6) second=Klre1(other,120/213) paralog=81.3 start=not_aligned(q_start=6)
+

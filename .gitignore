@@ -1,0 +1,23 @@
+# Layout and outputs recreated by reproduce.sh
+/verify/
+/summary/
+/manuscript/
+/pair1/
+/pair2/
+/pair3/
+07_code/derived/
+07_code/figures/
+07_code/__pycache__/
+
+# Raw and intermediate data are never committed
+*.paf
+*.paf.gz
+*.fastq
+*.fastq.gz
+*.fa
+*.fa.gz
+*.fai
+*.dmnd
+*.bam
+*.cram
+*.zip

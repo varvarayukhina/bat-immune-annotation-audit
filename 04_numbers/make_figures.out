@@ -1,0 +1,20 @@
+FIG3a pair1: 199 evaluated, 13 with nominal BH q < 0.05, 2 zeros among evaluated
+FIG3a pair2: 129 evaluated, 19 with nominal BH q < 0.05, 13 zeros among evaluated
+FIG3a pair3: 144 evaluated, 13 with nominal BH q < 0.05, 5 zeros among evaluated
+FIG1 observed haplotype differences per family
+  Myotis sodalis: 7 of 19 families differ between the haplotypes; 12 identical; largest CD1 16v23, MHC-I 34v40, LILR 20v23
+  Rhinolophus clivosus: 4 of 22 families differ between the haplotypes; 18 identical; largest MHC-I 18v15, KLRC 9v7, LILR 11v9
+  Eidolon dupreanum: 3 of 22 families differ between the haplotypes; 19 identical; largest MHC-I 19v16, KLRC 9v11, KLRD1 10v9
+FIG2 {'pair1': {'artefact_sensitivity_or_threshold': 35, 'locus_absent_from_other_haplotype': 1, 'status_differs_large_indel_in_gene': 1, 'status_differs_no_disruptive_variant_found': 9, 'status_differs_with_disruptive_variant': 8}, 'pair2': {'artefact_sensitivity_or_threshold': 10, 'status_differs_no_disruptive_variant_found': 1, 'status_differs_with_disruptive_variant': 2}, 'pair3': {'artefact_sensitivity_or_threshold': 46, 'status_differs_no_disruptive_variant_found': 1, 'status_differs_with_disruptive_variant': 3}}
+FIG3b: 108 of 115 groups within two units
+   Myotis sodalis           LILR     hap1  20 ->  50.2
+   Myotis sodalis           LILR     hap2  23 ->  29.9
+   Myotis sodalis           MHC-I    hap2  40 ->  51.1
+   Rhinolophus clivosus     CD1      hap1   3 ->   0.1
+   Rhinolophus clivosus     MHC-I    hap1  18 ->  61.5
+   Eidolon dupreanum        CD1      hap1  10 ->   5.2
+   Eidolon dupreanum        CD1      hap2  10 ->   4.4
+FIG4 {'pair1': {'intact': 44, 'flagged': 25, 'atg': 20, 'near_start': 0, 'other_protein': 5, 'junction': 0, 'coverage': 25}, 'pair2': {'intact': 28, 'flagged': 8, 'atg': 6, 'near_start': 0, 'other_protein': 2, 'junction': 2, 'coverage': 6}, 'pair3': {'intact': 50, 'flagged': 17, 'atg': 2, 'near_start': 2, 'other_protein': 13, 'junction': 12, 'coverage': 5}}
+FIG5 silent or partial families: {'pair1': {'KLRG2': (0, 4), 'NCR2': (0, 1)}, 'pair2': {'FCAR': (2, 4), 'KLRG2': (0, 2)}, 'pair3': {'NCR2': (0, 2), 'KLRG2': (0, 2)}}
+FIG5 KLRD1 pair3: models 19 with >=2 junction alignments 18 after MAPQ >=20 10
+font: Helvetica Neue

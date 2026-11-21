@@ -1,0 +1,27 @@
+haplotype	locus_id	family	pilot_start_codon	curated_intact	curation_note	relative_queries_of_family	bat_query	bat_q_start	bat_identity	bat_frameshifts	bat_stops	bat_start_codon	nearest_inframe_ATG	bat_verdict
+hap1	hap1_L013	TAP1	ATG	yes		1	XP_032958861.1	1	0.99	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L014	TAP2	ATG	yes		2	XP_032958910.1	1	0.99	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L026	KLRG1	ATG	yes		2	XP_032973869.1	1	0.99	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L029	CLEC2D	ATG	yes		6	XP_032974324.1	1	1.00	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L031	KLRF	ATG	yes		7	XP_032973478.1	1	1.00	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L036	KLRD1	non-ATG(TCT)	no	start:non-ATG(TCT)	3	XP_032973996.1	1	0.99	0	0	TCT	no_in-frame_ATG_within_20_codons_up/15_down	non_ATG(TCT;no_in-frame_ATG_within_20_codons_up/15_down)
+hap1	hap1_L037	KLRD1	non-ATG(TCT)	no	start:non-ATG(TCT)	3	XP_032973537.1	1	0.99	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L038	KLRK1	ATG	yes		2	XP_032973928.1	1	0.97	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L047	KLRC	ATG	yes		4	XP_032973509.1	1	0.92	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L058	LAIR1	ATG	yes		8	XP_032983414.1	1	0.93	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L059	LAIR1	ATG	yes		8	XP_032985334.1	1	0.98	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L060	LILR	not_aligned(q_start=14)	no	start:not_aligned(q_start=14)	28	XP_032983413.1	1	0.75	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L062	NCR1	not_aligned(q_start=11)	no	start:not_aligned(q_start=11)	3	XP_032984191.1	1	0.99	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L010	TAP1	ATG	yes		1	XP_032958861.1	1	0.99	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L011	TAP2	ATG	yes		2	XP_032958910.1	1	0.99	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L023	KLRG1	ATG	yes		2	XP_032973869.1	1	0.99	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L026	CLEC2D	ATG	yes		6	XP_032974324.1	1	1.00	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L028	KLRF	ATG	yes		7	XP_032973478.1	1	1.00	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L032	KLRD1	non-ATG(TCT)	no	start:non-ATG(TCT)	3	XP_032973996.1	1	0.99	0	0	TCT	no_in-frame_ATG_within_20_codons_up/15_down	non_ATG(TCT;no_in-frame_ATG_within_20_codons_up/15_down)
+hap2	hap2_L033	KLRD1	non-ATG(TCT)	no	start:non-ATG(TCT)	3	XP_032973537.1	1	0.99	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L034	KLRK1	ATG	yes		2	XP_032973928.1	1	0.97	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L041	KLRC	ATG	yes		4	XP_032973509.1	1	1.00	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L050	LAIR1	ATG	yes		8	XP_032983414.1	1	0.93	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L051	LAIR1	ATG	yes		8	XP_032985334.1	1	0.98	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L052	LILR	not_aligned(q_start=14)	no	start:not_aligned(q_start=14)	28	XP_032983413.1	1	0.75	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L054	NCR1	not_aligned(q_start=11)	no	start:not_aligned(q_start=11)	3	XP_032984191.1	1	0.99	0	0	ATG	-	ATG_from_residue_1

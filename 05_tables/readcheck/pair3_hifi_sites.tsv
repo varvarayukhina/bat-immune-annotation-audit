@@ -1,0 +1,4 @@
+diff_index	locus	family	classes	better_hap	alt_hap	variant	ref_contig_pos	alt_contig_pos	alt_strand	ref_site	alt_site	alt_reads_with_better_allele	ref_reads_with_alt_allele	verdict
+28	hap1_L070|hap2_L072	CD1|CD1	hap1=partial,hap2=intact	hap2	hap1	CDS6:G>A@13346->stop(TGA)	CM185958.1:47652414	CM185975.1:52097144	+	n=13(mq20 0) match=13 sub=0 ins=0 del=0 []	n=5(mq20 4) match=5 sub=0 ins=0 del=0 []	0	0	variant_supported_by_reads_of_hap1
+59	hap1_L027|hap2_L029	KLRD1|KLRD1	hap1=pseudogene-like,hap2=intact	hap2	hap1	CDS5:C>T@13679->stop(TGA)	CM185945.1:23943122	CM185962.1:24029035	+	n=9(mq20 7) match=9 sub=0 ins=0 del=0 []	n=10(mq20 10) match=10 sub=0 ins=0 del=0 []	0	0	variant_supported_by_reads_of_hap1
+62	hap2_L032	KLRD1	hap2=intact,hap1=pseudogene-like	hap2	hap1	splice_site:C>T@9999	CM185945.1:23981974	CM185962.1:24025354	+	n=16(mq20 16) match=16 sub=0 ins=0 del=0 []	n=11(mq20 11) match=11 sub=0 ins=0 del=0 []	0	0	variant_supported_by_reads_of_hap1

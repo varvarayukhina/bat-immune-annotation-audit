@@ -1,0 +1,39 @@
+pair2: PAF records 705323, kept (primary, block>=2000, de<=0.02) 10492
+  hap1|hap1_LRC_1|CM138571.1:47664072-48563414 median depth 4.0 reads 1042
+  hap1|hap1_MHC-I_1|CM138552.1:115265945-117762833 median depth 5.0 reads 1194
+  hap1|hap1_MHC-I_2|CM138552.1:107109338-107537294 median depth 5.0 reads 112
+  hap1|hap1_MHC-I_3|CM138552.1:111212743-111694375 median depth 5.0 reads 1192
+  hap1|hap1_MHC-I_4|CM138572.1:25688707-26107783 median depth 5.0 reads 98
+  hap1|hap1_MHC-I_5|CM138574.1:40463910-40806044 median depth 5.0 reads 78
+  hap1|hap1_MHC-I_6|CM138556.1:40748870-40952126 median depth 5.0 reads 52
+  hap1|hap1_MHC-I_7|CM138560.1:64656570-64856923 median depth 4.0 reads 44
+  hap1|hap1_MHC-I_8|CM138572.1:420252-622039 median depth 6.0 reads 55
+  hap1|hap1_MHC-I_9|CM138572.1:42136474-42353271 median depth 5.0 reads 52
+  hap1|hap1_MHC-I_10|CM138575.1:40168760-40388816 median depth 5.0 reads 58
+  hap1|hap1_NKC_1|CM138560.1:24632101-26540656 median depth 5.0 reads 563
+  hap2|hap2_LRC_1|CM138543.1:47849722-48681979 median depth 5.0 reads 636
+  hap2|hap2_MHC-I_1|CM138524.1:110418134-112895691 median depth 4.0 reads 2870
+  hap2|hap2_MHC-I_2|CM138524.1:102543420-102894210 median depth 4.0 reads 69
+  hap2|hap2_MHC-I_4|CM138524.1:106554499-106837069 median depth 7.0 reads 89
+  hap2|hap2_MHC-I_3|CM138544.1:25937076-26356143 median depth 3.0 reads 86
+  hap2|hap2_MHC-I_5|CM138546.1:40687281-41005727 median depth 5.0 reads 1469
+  hap2|hap2_MHC-I_6|CM138528.1:40015163-40218419 median depth 5.0 reads 53
+  hap2|hap2_MHC-I_7|CM138532.1:64670600-64870953 median depth 4.0 reads 48
+  hap2|hap2_MHC-I_8|CM138544.1:646889-848676 median depth 4.0 reads 43
+  hap2|hap2_MHC-I_9|CM138544.1:42360364-42577160 median depth 5.0 reads 56
+  hap2|hap2_MHC-I_10|CM138547.1:38602110-38822151 median depth 4.0 reads 43
+  hap2|hap2_NKC_1|CM138532.1:24674955-26542580 median depth 5.0 reads 490
+locus: about_1x=109, about_2x=10, below_1x=9, outside_windows=4, low_coverage=3, near_0=1
+hap_only_locus: 
+absent_gap: about_1x=4
+>=98% paralog loci: hap1 hap1_L004 NCR2 ratio=0.78 mq20=0.78 span=2 -> about_1x:supported_as_assembled; hap1 hap1_L006 NCR2 ratio=1.07 mq20=1.07 span=5 -> about_1x:supported_as_assembled; hap1 hap1_L053 LILR ratio=1.89 mq20=1.89 span=6 -> about_2x:sequence_present_in_both_haplotypes; hap1 hap1_L054 LILR ratio=1.22 mq20=0.47 span=1 -> about_1x:supported_as_assembled; hap1 hap1_L055 LILR ratio=0.00 mq20=0.00 span=0 -> near_0:no_read_support; hap1 hap1_L056 LILR ratio=0.71 mq20=0.46 span=2 -> about_1x:supported_as_assembled; hap1 hap1_L057 LILR ratio=0.25 mq20=0.00 span=0 -> below_1x:reads_split_over_copies
+  absent_gap hap1 gap14 - absent_from_hap2 len=5106 ratio=1.31 span=4 -> about_1x:supported_as_assembled
+  absent_gap hap1 gap28 - absent_from_hap2 len=193933 ratio=1.20 span=0 -> about_1x:supported_as_assembled(no_spanning_read)
+  absent_gap hap1 gap33 - absent_from_hap2 len=22975 ratio=1.22 span=0 -> about_1x:supported_as_assembled(no_spanning_read)
+  absent_gap hap1 gap35 - absent_from_hap2 len=9275 ratio=1.62 span=3 -> about_1x:supported_as_assembled
+variant sites: variant_supported_by_reads_of_hap1=3, low_coverage_at_alt=2
+  hap1_L002|hap2_L002 NCR2|NCR2 hap1=partial,hap2=pseudogene-like splice_site:T>A@71313 | better hap1: n=5(mq20 5) match=5 sub=0 ins=0 del=0 [] | alt hap2: n=2(mq20 2) match=2 sub=0 ins=0 del=0 [] -> low_coverage_at_alt
+  hap1_L002|hap2_L002 NCR2|NCR2 hap1=partial,hap2=pseudogene-like CDS4:ins1@77024 | better hap1: n=5(mq20 5) match=4 sub=0 ins=1 del=0 [ins1x1] | alt hap2: n=2(mq20 2) match=2 sub=0 ins=0 del=0 [] -> low_coverage_at_alt
+  hap1_L011|hap2_L008 MHC-I|MHC-I hap1=pseudogene-like,hap2=partial CDS3:ins10@10682 | better hap2: n=10(mq20 10) match=10 sub=0 ins=0 del=0 [] | alt hap1: n=3(mq20 3) match=3 sub=0 ins=0 del=0 [] -> variant_supported_by_reads_of_hap1
+  hap1_L011|hap2_L008 MHC-I|MHC-I hap1=pseudogene-like,hap2=partial CDS3:inframe_ins3@10725 | better hap2: n=10(mq20 10) match=10 sub=0 ins=0 del=0 [] | alt hap1: n=3(mq20 3) match=3 sub=0 ins=0 del=0 [] -> variant_supported_by_reads_of_hap1
+  hap1_L011|hap2_L008 MHC-I|MHC-I hap1=pseudogene-like,hap2=partial CDS4:del1@10908 | better hap2: n=10(mq20 10) match=10 sub=0 ins=0 del=0 [] | alt hap1: n=3(mq20 3) match=3 sub=0 ins=0 del=0 [] -> variant_supported_by_reads_of_hap1

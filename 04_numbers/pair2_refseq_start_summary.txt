@@ -1,0 +1,11 @@
+pair2: relative ncbi_dataset: 109 proteins of pilot families (B2M=1, CD1=6, CLEC12A=5, CLEC2D=6, CLEC4E=1, FCAR=1, KLRA=1, KLRB1=1, KLRC=4, KLRD1=3, KLRF=7, KLRG1=2, KLRG2=1, KLRK1=2, LAIR1=8, LILR=28, MHC-I=25, NCR1=3, NCR3=1, TAP1=1, TAP2=2)
+intact loci 28, in windows 26; bat-query verdicts: ATG_from_residue_1=24, non_ATG=2
+loci failing the human/mouse start-codon check (8): ATG_from_residue_1=6, non_ATG=2
+  hap1 hap1_L036 KLRD1 pilot:non-ATG(TCT) -> bat XP_032973996.1 q_start=1 ident=0.99 codon=TCT -> non_ATG(TCT;no_in-frame_ATG_within_20_codons_up/15_down)
+  hap1 hap1_L037 KLRD1 pilot:non-ATG(TCT) -> bat XP_032973537.1 q_start=1 ident=0.99 codon=ATG -> ATG_from_residue_1
+  hap1 hap1_L060 LILR pilot:not_aligned(q_start=14) -> bat XP_032983413.1 q_start=1 ident=0.75 codon=ATG -> ATG_from_residue_1
+  hap1 hap1_L062 NCR1 pilot:not_aligned(q_start=11) -> bat XP_032984191.1 q_start=1 ident=0.99 codon=ATG -> ATG_from_residue_1
+  hap2 hap2_L032 KLRD1 pilot:non-ATG(TCT) -> bat XP_032973996.1 q_start=1 ident=0.99 codon=TCT -> non_ATG(TCT;no_in-frame_ATG_within_20_codons_up/15_down)
+  hap2 hap2_L033 KLRD1 pilot:non-ATG(TCT) -> bat XP_032973537.1 q_start=1 ident=0.99 codon=ATG -> ATG_from_residue_1
+  hap2 hap2_L052 LILR pilot:not_aligned(q_start=14) -> bat XP_032983413.1 q_start=1 ident=0.75 codon=ATG -> ATG_from_residue_1
+  hap2 hap2_L054 NCR1 pilot:not_aligned(q_start=11) -> bat XP_032984191.1 q_start=1 ident=0.99 codon=ATG -> ATG_from_residue_1

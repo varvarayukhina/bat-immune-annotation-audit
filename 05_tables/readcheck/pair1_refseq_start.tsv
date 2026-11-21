@@ -1,0 +1,43 @@
+haplotype	locus_id	family	pilot_start_codon	curated_intact	curation_note	relative_queries_of_family	bat_query	bat_q_start	bat_identity	bat_frameshifts	bat_stops	bat_start_codon	nearest_inframe_ATG	bat_verdict
+hap1	hap1_L001	B2M	ATG	yes		1	XP_036155859.1	1	0.94	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L004	KLRF	ATG	yes		2	XP_036156020.1	1	0.97	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L010	KLRK1	ATG	yes		1	XP_036157692.1	1	0.96	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L022	TAP1	non-ATG(ACG)	no	start:non-ATG(ACG)	2	XP_036212308.1	1	0.99	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L042	MHC-I	not_aligned(q_start=4)	no	start:not_aligned(q_start=4)	52	XP_036162557.1	1	0.84	1	0	ACC	in-frame_ATG_7_codons_downstream	non_ATG(ACC;in-frame_ATG_7_codons_downstream)
+hap1	hap1_L044	MHC-I	non-ATG(CTG)	no	start:non-ATG(CTG)	52	XP_036162485.1	1	0.84	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L064	NCR1	ATG	yes		2	XP_036162584.1	1	0.91	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L066	LILR	not_aligned(q_start=29)	no	start:not_aligned(q_start=29)	11	XP_036162435.1	1	0.93	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L069	LILR	non-ATG(CCC)	no	start:non-ATG(CCC)	11	XP_036162435.1	1	0.77	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L071	LILR	not_aligned(q_start=10)	no	realigned_as_partial,start:not_aligned(q_start=10),stop:na(frameshift),internal_stops:na(frameshift),len%3!=0	11	XP_036162435.1	1	0.81	0	0	ATC	no_in-frame_ATG_within_20_codons_up/15_down	non_ATG(ATC;no_in-frame_ATG_within_20_codons_up/15_down)
+hap1	hap1_L072	LILR	not_aligned(q_start=23)	no	start:not_aligned(q_start=23)	11	XP_036162435.1	1	0.78	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L078	LILR	-	no	no_hit_of_this_family_on_realignment;alone_with_evidence_query:found(cov=0.80,fs=0,st=0,ident=0.6597,ms=785,max_intron=11795)	11	XP_036162435.1	1	0.71	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L079	LILR	not_aligned(q_start=15)	no	start:not_aligned(q_start=15)	11	XP_036162435.1	1	0.79	0	0	ATA	no_in-frame_ATG_within_20_codons_up/15_down	non_ATG(ATA;no_in-frame_ATG_within_20_codons_up/15_down)
+hap1	hap1_L080	LILR	non-ATG(CTG)	no	start:non-ATG(CTG)	11	XP_036162435.1	1	0.84	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L082	LILR	not_aligned(q_start=11)	no	start:not_aligned(q_start=11),stop:na(frameshift),internal_stops:na(frameshift),len%3!=0	11	XP_036162435.1	1	0.81	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L085	MR1	non-ATG(TTA)	no	start:non-ATG(TTA)	5	XP_036198550.1	1	0.97	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L088	CD1	ATG	yes		10	XP_036199551.1	1	0.96	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L089	CD1	ATG	yes		10	XP_036199551.1	1	0.91	0	0	ATG	-	ATG_from_residue_1
+hap1	hap1_L090	CD1	not_aligned(q_start=30)	no	start:not_aligned(q_start=30)	10	XP_036199551.1	1	0.93	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L001	B2M	ATG	yes		1	XP_036155859.1	1	0.94	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L004	KLRF	ATG	yes		2	XP_036156020.1	1	0.97	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L007	KLRD1	non-ATG(TCG)	no	start:non-ATG(TCG)	3	XP_036157687.1	1	0.83	0	0	TCG	no_in-frame_ATG_within_20_codons_up/15_down	non_ATG(TCG;no_in-frame_ATG_within_20_codons_up/15_down)
+hap2	hap2_L010	KLRK1	ATG	yes		1	XP_036157692.1	1	0.97	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L014	KLRC	ATG	yes		3	XP_036155618.1	1	0.81	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L033	TAP1	non-ATG(ACG)	no	start:non-ATG(ACG)	2	XP_036212308.1	1	0.98	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L037	CD1	ATG	yes		10	XP_036176587.1	1	0.87	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L043	CD1	ATG	yes		10	XP_036176587.1	1	0.74	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L054	MHC-I	non-ATG(CTG)	no	start:non-ATG(CTG)	52	XP_036162485.1	1	0.85	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L069	NCR1	ATG	yes		2	XP_036162584.1	1	0.91	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L070	LILR	not_aligned(q_start=29)	no	start:not_aligned(q_start=29)	11	XP_036162435.1	1	0.93	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L075	LILR	not_aligned(q_start=11)	no	start:not_aligned(q_start=11)	11	XP_036162435.1	1	0.80	0	0	ATC	no_in-frame_ATG_within_20_codons_up/15_down	non_ATG(ATC;no_in-frame_ATG_within_20_codons_up/15_down)
+hap2	hap2_L080	LILR	non-ATG(CTG)	no	start:non-ATG(CTG)	11	XP_036162435.1	1	0.79	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L081	LILR	not_aligned(q_start=5)	no	realigned_as_pseudogene-like,start:not_aligned(q_start=5),stop:na(frameshift),internal_stops:na(frameshift),len%3!=0	11	XP_036162435.1	1	0.76	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L082	LILR	ATG	no	realigned_as_partial,stop:no_stop_codon_feature	11	XP_036162435.1	1	0.79	0	0	ATA	no_in-frame_ATG_within_20_codons_up/15_down	non_ATG(ATA;no_in-frame_ATG_within_20_codons_up/15_down)
+hap2	hap2_L083	LILR	non-ATG(CTG)	no	start:non-ATG(CTG)	11	XP_036162435.1	1	0.83	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L086	LILR	not_aligned(q_start=28)	no	start:not_aligned(q_start=28),stop:no_stop_codon_feature	11	XP_036162636.1	1	0.69	0	1	ATG	-	ATG_from_residue_1
+hap2	hap2_L089	LILR	ATG	yes		11	XP_036162435.1	1	0.81	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L097	MR1	non-ATG(TTA)	no	start:non-ATG(TTA)	5	XP_036198550.1	1	0.97	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L106	CD1	ATG	yes		10	XP_036199551.1	1	0.93	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L107	CD1	not_aligned(q_start=27)	no	start:not_aligned(q_start=27)	10	XP_036199551.1	1	0.96	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L108	CD1	not_aligned(q_start=17)	no	start:not_aligned(q_start=17)	10	XP_036199551.1	1	0.90	0	0	ATG	-	ATG_from_residue_1
+hap2	hap2_L109	CD1	not_aligned(q_start=30)	no	start:not_aligned(q_start=30)	10	XP_036199551.1	1	0.94	0	0	ATG	-	ATG_from_residue_1
