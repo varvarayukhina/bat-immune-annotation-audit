@@ -2,13 +2,11 @@
 
 **Running title:** An audit of immune gene-family counts in phased bat genomes
 
-**Author:** [Full name]¹
+**Author:** Varvara Iukhina¹
 
-¹ [Department, Institution, City, Country]
+¹ Independent researcher
 
-**Corresponding author:** [Full name], [e-mail]
-
-**ORCID:** [0000-0000-0000-0000]
+**Corresponding author:** Varvara Iukhina, juchinawarja@gmail.com
 
 **Keywords:** haplotype-resolved assembly; gene family expansion; natural killer cell receptors; MHC class I; Chiroptera; copy number variation; annotation artefact
 
@@ -387,7 +385,7 @@ curation, difference curation, read depth, variant-site support, transcript evid
 checks, per-family count differences, normalized depth sums, exploratory depth screen) and the figure code are
 deposited at https://github.com/varvarayukhina/bat-immune-annotation-audit under the MIT licence.
 
-**Author contributions.** [Full name] designed the study, performed the analyses, verified all
+**Author contributions.** Varvara Iukhina designed the study, performed the analyses, verified all
 results against the primary tables, prepared the figures, wrote the manuscript and approves the
 submitted version.
 
