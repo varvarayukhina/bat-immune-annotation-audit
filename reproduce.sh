@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
-# Rebuild every figure and every derived statistic in this repository from the
-# deposited tables. No raw data needed.
-#
-# Needs a Python with matplotlib and scipy. Either have them installed and run
-#   ./reproduce.sh
-# or let uv supply them without installing anything:
+# Rebuild every figure and derived statistic from the deposited tables. No raw data.
+# Needs matplotlib and scipy, or:
 #   PYTHON="uv run --with matplotlib --with scipy python3" ./reproduce.sh
 set -euo pipefail
 IFS=$'\n\t'
@@ -16,8 +12,7 @@ IFS=$'\n\t'
 
 cd "$(dirname "$0")"
 
-# The analysis code reads the directory layout it ran in. Recreate that layout as
-# links into the deposited tables, so the tables are stored once.
+# The analysis code reads the layout it ran in; recreate it as links, tables stored once.
 for p in pair1 pair2 pair3; do
   mkdir -p "verify/$p"
   for t in hifi_depth refseq_start rna_loci windows; do
@@ -39,10 +34,8 @@ mkdir -p 07_code/derived manuscript/derived
 # The KLRD1 junction check is a separate step, deposited as a table.
 ln -sf ../../05_tables/derived/klrd1_junction_mapq.tsv manuscript/derived/klrd1_junction_mapq.tsv
 
-# Section 4 of analysis_extra.py correlates the depth ratio with GC content and locus
-# length, so it reads the window sequences. Those hold assembly sequence and are not
-# deposited; rebuild them with 07_code/fetch_windows.py from the public assemblies.
-# Without them the script stops after section 3, which is expected, not a failure.
+# Section 4 needs verify/<pair>/windows_<hap>.fa, not deposited; see 07_code/fetch_windows.py.
+# Without them the script stops after section 3. Expected, not a failure.
 have_fa=yes
 for p in pair1 pair2 pair3; do
   for h in hap1 hap2; do
