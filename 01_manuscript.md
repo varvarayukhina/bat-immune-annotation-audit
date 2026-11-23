@@ -10,7 +10,7 @@
 
 **Keywords:** haplotype-resolved assembly; gene family expansion; natural killer cell receptors; MHC class I; Chiroptera; copy number variation; annotation artefact
 
-**Word count:** main text ~4,400; 5 figures; 1 table; 25 references
+**Word count:** main text ~5,500; 5 figures; 1 table; 31 references
 
 ---
 
@@ -72,7 +72,16 @@ short reads are prone to inaccuracies in structurally complex regions such as th
 loci, that the resulting redundant contigs and gaps can lead to over- or underestimation of gene
 counts, and that the reliability of observed copy numbers is limited accordingly [20]; the same
 problem is documented for olfactory receptors [21], and inference in the human MHC was improved
-only by replacing the single linear reference with a population reference graph [22]. The MHC
+only by replacing the single linear reference with a population reference graph [22]. The effect
+has also been measured directly. Comparing draft assemblies against higher-quality versions of the
+same genomes, upwards of 40% of gene families were inferred to have the wrong number of genes, in
+both directions, and the main cause of inflated counts was the fragmentation of genes onto
+separate contigs [26]. Applying different annotation methods across a clade, rather than one
+uniform method, inflated the apparent number of lineage-specific genes by up to 15-fold [27]. And
+4 to 16% of the sequence in three earlier vertebrate assemblies was falsely duplicated, affecting
+hundreds to thousands of genes and producing overestimated gene-family expansions; the main source
+was heterotype duplication, in which haplotype sequences divergent enough to defeat the assembler
+are placed as separate genes or regions [28]. The MHC
 class I region of bats is also organised differently from the human region. In *Pteropus alecto*
 and *Eptesicus fuscus* the region between GABBR1 and TCF19 is contracted to about 1.1 Mb against
 about 1.7 Mb in human, class I genes are absent from the α and κ duplication blocks, and a single
@@ -399,7 +408,14 @@ at least two upstream junction alignments, but only 10 survive the MAPQ ≥20 fi
 395 of 456 read pairs overlapping hap1 models recur in the hap2 mapping, so the same transcript
 reads are being counted at several copies. A gene that is single-copy across mammals, called six or
 seven times, with half the models losing read support once multi-mapping reads are removed, is the
-pattern this audit was built to surface. Note that the published single-copy expectation concerns
+pattern this audit was built to surface. A documented mechanism fits. In a long-read assembly of a
+passerine, MHC alleles diverged enough that a diploid-aware assembler classified haplotypes of one
+locus as sequences from different genomic regions, so that paralogue number was readily over- or
+underestimated and amplicon sequencing was needed to resolve it [29]; the same study recovered only
+84% of the annotated MHC class I alleles by amplicon, indicating incomplete annotation as well. The
+38-species comparison notes that CD94 proteins lacking the conserved cysteines occur exclusively in
+pteropodid bats [20], so divergent CD94 sequence in *E. dupreanum* is the substrate that mechanism
+requires. Note that the published single-copy expectation concerns
 CD94 specifically; the earlier report of absent killer-cell lectin-like receptors in *P. alecto*
 refers to the Ly49/KLRA genes [25] and does not bear on KLRD1.
 
@@ -409,9 +425,20 @@ from such audits. Functional assays, such as the study of MR1-restricted T cells
 
 ### 4.1 Limitations
 
+The two haplotypes are treated throughout as faithful renderings of the two parental chromosomes,
+and that assumption is not tested here. Phasing without parental data [11] admits switch errors, in
+which a contig changes from one parental haplotype to the other, and such an error produces an
+apparent haplotype difference that is neither biology nor an annotation artefact. No switch-error
+screen was applied. Work on phased tandem arrays in polar fishes found assembly uncertainty to be
+ubiquitous across array haplotypes and built explicit controls for misassembly and switch errors
+before measuring haplotype copy-number diversity [30]; a comparable screen is the first thing this
+design needs.
+
 Reads were mapped to extracted windows rather than whole genomes, and this is the largest limitation
 of the depth analysis. Reads from elsewhere in the genome can align to similar sequence in the
-available windows. Among primary
+available windows. Reference bias of this kind is well documented in polymorphic multigene
+families: at the human HLA genes, mapping to a single reference overestimated reference-allele
+frequencies in the 1000 Genomes data [31]. Among primary
 alignments with an aligned block ≥5 kb against the animal's own windows, those at divergence ≥0.10
 cover 37.5% of the read in *E. dupreanum* at a mean MAPQ of 3.7 and make up 72.5% of the reads,
 whereas those below 0.01 divergence cover 99.2% of the read at a mean MAPQ of 41.2; in
@@ -553,12 +580,30 @@ verified every number against the primary result tables and is responsible for a
 25. Zhang G, Cowled C, Shi Z, et al. Comparative analysis of bat genomes provides insight into the
     evolution of flight and immunity. *Science*. 2013;339(6118):456–460.
     doi:10.1126/science.1230835
+26. Denton JF, Lugo-Martinez J, Tucker AE, Schrider DR, Warren WC, Hahn MW. Extensive error in the
+    number of genes inferred from draft genome assemblies. *PLoS Computational Biology*.
+    2014;10(12):e1003998. doi:10.1371/journal.pcbi.1003998
+27. Weisman CM, Murray AW, Eddy SR. Mixing genome annotation methods in a comparative analysis
+    inflates the apparent number of lineage-specific genes. *Current Biology*.
+    2022;32(12):2632–2639.e2. doi:10.1016/j.cub.2022.04.085
+28. Ko BJ, Lee C, Kim J, et al. Widespread false gene gains caused by duplication errors in genome
+    assemblies. *Genome Biology*. 2022;23(1):205. doi:10.1186/s13059-022-02764-1
+29. Mellinger S, Stervander M, Lundberg M, Drews A, Westerdahl H. Improved haplotype resolution of
+    highly duplicated MHC genes in a long-read genome assembly using MiSeq amplicons. *PeerJ*.
+    2023;11:e15480. doi:10.7717/peerj.15480
+30. Moosman OW, Kelley JL, Bogan SN. Mitigating assembly and switch errors in phased genomes of
+    polar fishes reveals haplotype diversity in copy number of antifreeze protein genes.
+    *Heredity*. 2026;135(3):174–186. doi:10.1038/s41437-025-00803-8
+31. Brandt DYC, Aguiar VRC, Bitarello BD, Nunes K, Goudet J, Meyer D. Mapping bias overestimates
+    reference allele frequencies at the *HLA* genes in the 1000 Genomes Project Phase I data.
+    *G3 Genes|Genomes|Genetics*. 2015;5(5):931–941. doi:10.1534/g3.114.015784
 
-> **Note on references.** All 25 references were verified against Crossref and PubMed on
+> **Note on references.** All 31 references were verified against Crossref and PubMed on
 > 23 November 2026: title, first authors, journal, year, volume, issue, pages and DOI. References
-> 20–25 were added last and are therefore not in first-citation order; renumber them into the
+> 20–31 were added last and are therefore not in first-citation order; renumber them into the
 > target journal's reference style before submission. Reference 4 has a published erratum
-> (*Molecular Ecology*. 2022;31(19):5124. doi:10.1111/mec.16626).
+> (*Molecular Ecology*. 2022;31(19):5124. doi:10.1111/mec.16626). Reference 30 appeared online in
+> October 2025 and in the March 2026 issue; the issue citation is given.
 
 ## Figure legends
 
