@@ -10,7 +10,7 @@
 
 **Keywords:** haplotype-resolved assembly; gene family expansion; natural killer cell receptors; MHC class I; Chiroptera; copy number variation; annotation artefact
 
-**Word count:** main text ~3,600; 5 figures; 1 table; 19 references
+**Word count:** main text ~4,400; 5 figures; 1 table; 25 references
 
 ---
 
@@ -22,14 +22,21 @@ depend on the haplotype and annotation pass in paired assemblies of *Myotis soda
 locus-level calls in natural killer receptor, leukocyte receptor and MHC class I regions using
 renewed annotation searches, same-individual PacBio HiFi reads and RNA-seq and RefSeq proteins
 from relatives. In the default pass, the largest difference was seven annotated CD1 loci in
-*M. sodalis* (16 versus 23). The sums of absolute per-family differences were 21, 8 and 6
+*M. sodalis* (16 versus 23), of which 3 and 6 were intact models and the remainder partial or
+pseudogene-like; the raw counts exceed the largest mammalian CD1 family so far described, while the
+intact subsets do not. The sums of absolute per-family differences were 21, 8 and 6
 across the three individuals. In 91 of 117 flagged rows, renewed searches found a model of
 the same family and status in the investigated partner region. Multiple landings or
 out-of-window matches were flagged in 61 of these 91 rows. Fifteen rows carried candidate
 sequence differences, and 14 met the study's read-support rules. A localized flanking
 pile-up drove the largest excess in summed normalized depth. Of 50 start-codon flags,
 28 had a canonical ATG at residue 1 in a relative's RefSeq alignment and 14 had upstream
-RNA junction evidence. Together, the cases identify where paralogue assignment, mapping
+RNA junction evidence. Two families could be checked against published counts for the same clade,
+with opposite results: the LILR contrast between *M. sodalis* and the pteropodid *E. dupreanum*
+reproduces an independent report, whereas the 6 and 7 intact KLRD1 models called in
+*E. dupreanum* stand against the single CD94 copy reported for that species in a 38-species
+comparison, and only 10 of the 19 models retain junction support under a MAPQ ≥20 filter.
+Together, the cases identify where paralogue assignment, mapping
 and gene-model completion can change the interpretation of annotated locus counts.
 
 ---
@@ -37,9 +44,21 @@ and gene-model completion can change the interpretation of annotated locus count
 ## 1. Introduction
 
 Bats are studied as reservoirs of viruses that rarely make them ill, and gene-family size is a
-common explanatory variable in that literature. Expanded or contracted natural killer (NK) receptor
-genes, MHC class I loci, interferon loci and related families are reported as species or lineage
-characteristics [1–5], and functional work on single pathways, such as dampened STING-dependent
+common explanatory variable in that literature. The reported counts do not point one way. In
+*Rousettus aegyptiacus* the NKG2A/CD94 and MHC class I families and the type I interferon locus are
+all described as expanded, with 14 NKG2A/B-like genes, 5 CD94-like genes and 46 functional
+interferon genes [1]. A 37-species survey instead places the natural killer gene complex among
+more than 1,000 gene losses unique to bats, while reporting lineage-specific expansions of the
+MHC class I family [4]. A
+further survey finds the type I interferon locus contracted in the bat ancestor, with
+0–4 interferon-α copies against 10–18 in outgroups [5], which does not sit easily beside the 12
+interferon-α genes reported for *Rousettus* [1]. A recent 38-species comparison of NKG2A, CD94,
+MHC class I and type I interferon reports substantial between-species diversity in all four and
+argues against generalising from any one genome [20]. Other families move independently: APOBEC3
+expanded in the bat ancestor and again within *Myotis* [2], while a 115-genome analysis of
+selection signatures in immune genes reports an excess of adaptations on the ancestral chiropteran
+branch without addressing family size at all [3].
+Functional work on single pathways, such as dampened STING-dependent
 interferon activation [6] or attenuated NLRP3 inflammasome responses [7], is often read together
 with these counts. Chromosome-level and haplotype-resolved bat assemblies are now routine [2,3,8],
 and the counts drawn from them increasingly carry comparative weight.
@@ -47,11 +66,24 @@ and the counts drawn from them increasingly carry comparative weight.
 Two steps in that chain can create differences that are not in the genome. The first is gene
 calling: alignment-based annotation of a tandem array depends on score thresholds, on which query
 proteins are used and on how secondary alignments are filtered, so the same array can yield
-different locus counts in two runs or two assemblies. The MHC class I region of bats is organised
-differently from the human region and contains lineage-specific duplications [9], and the
-killer-cell receptor haplotypes of humans, of comparable complexity, were resolved only when long
-reads made full haplotypes available [10]; both are warnings that short-query annotation of such
-arrays is fragile. The second step is assembly: near-identical copies collapse into one and
+different locus counts in two runs or two assemblies. This is an acknowledged difficulty rather
+than a hypothetical one. The 38-species comparison cited above states that assemblies built from
+short reads are prone to inaccuracies in structurally complex regions such as the MHC class I
+loci, that the resulting redundant contigs and gaps can lead to over- or underestimation of gene
+counts, and that the reliability of observed copy numbers is limited accordingly [20]; the same
+problem is documented for olfactory receptors [21], and inference in the human MHC was improved
+only by replacing the single linear reference with a population reference graph [22]. The MHC
+class I region of bats is also organised differently from the human region. In *Pteropus alecto*
+and *Eptesicus fuscus* the region between GABBR1 and TCF19 is contracted to about 1.1 Mb against
+about 1.7 Mb in human, class I genes are absent from the α and κ duplication blocks, and a single
+class I gene lies in the β block; eleven further class I genes sit on six separate *E. fuscus*
+scaffolds whose position relative to the region could not be resolved [9]. Across 38 bat species the chromosomal
+distribution of MHC class I genes is lineage- and species-specific, with genes outside the
+canonical chromosome in *Rousettus aegyptiacus* and dispersed onto a chromosome homologous to
+human chromosome 19 in *Myotis myotis* and three other yangochiropterans [20]. The killer-cell
+receptor haplotypes of humans, of comparable complexity, were resolved only when long
+reads made full haplotypes available [10]. Together these are warnings that short-query annotation
+of such arrays is fragile. The second step is assembly: near-identical copies collapse into one and
 heterozygous segments are sometimes represented twice [11,12], so the assembled sequence need not
 carry the true number of copies. Pangenome work in humans has shown how much structural variation a
 single reference hides [13].
@@ -337,7 +369,41 @@ alignments across the two *E. dupreanum* reference haplotypes. One candidate dis
 was observed in a KLRD1 model in the assembled individual. The nearby substitution received a position-only splice label and requires separate
 functional validation. Excess depth in LILR and MHC-I and low depth in
 CD1 identify cases where resolving paralogy and mappability matters for copy counting.
-Comparative claims about NK receptor and MHC class I repertoires in bats [1,4,5,9] would benefit
+
+Three of these results can be placed against published counts, and they do not all point the same
+way. First, the locus counts are dominated by incomplete models. Of the 16 and 23 CD1 loci in
+*M. sodalis*, 3 and 6 are intact and the rest are partial or pseudogene-like; the MHC class I
+counts of 34 and 40, 18 and 15, and 19 and 16 contain 2, 1, 0, 0, 0 and 0 intact models across the
+six haplotypes. The largest mammalian CD1 family described to date is the horse's, with 13
+complete genes [23], and CD1 content is reduced in several mammals, CD1d and CD1e being absent from
+the naked mole-rat [24]. A count of 16 or 23 CD1 loci therefore exceeds any published mammalian CD1
+family, while the intact subset of 3 and 6 does not. The seven-locus difference that is the largest
+in this study is a difference between fragment inventories, not between functional repertoires, and
+the same reading applies to the MHC class I counts, where class I genes of unresolved position were
+already reported in *E. fuscus* a decade ago [9].
+
+Second, the LILR result agrees with an independent report. Leukocyte receptor complex genes of the
+immunoglobulin superfamily, the LILRs among them, underwent considerable duplication in *Myotis
+davidii* while almost completely failing to expand in *Pteropus alecto* [25]. Here *M. sodalis*
+carries 20 and 23 LILR loci with 8 intact in each haplotype and the largest summed-depth excess of
+any family, whereas the pteropodid *E. dupreanum* carries 5 loci with no intact model in either
+haplotype. The annotation reproduces that published contrast between the two suborders without
+having been tuned to it.
+
+Third, KLRD1 goes the other way, and this is the clearest single indication that a count here is
+too high. CD94, the KLRD1 product, is regarded as a conserved single-copy gene across mammals, and
+the 38-species comparison reports exactly one intact CD94 copy in *E. dupreanum* [20]. The present
+annotation calls 6 intact KLRD1 models in hap1 and 7 in hap2 of that species. The read evidence
+fits over-calling rather than a genuine expansion: all 19 models attract RNA alignments and 18 have
+at least two upstream junction alignments, but only 10 survive the MAPQ ≥20 filter (Fig. 5b), and
+395 of 456 read pairs overlapping hap1 models recur in the hap2 mapping, so the same transcript
+reads are being counted at several copies. A gene that is single-copy across mammals, called six or
+seven times, with half the models losing read support once multi-mapping reads are removed, is the
+pattern this audit was built to surface. Note that the published single-copy expectation concerns
+CD94 specifically; the earlier report of absent killer-cell lectin-like receptors in *P. alecto*
+refers to the Ly49/KLRA genes [25] and does not bear on KLRD1.
+
+Comparative claims about NK receptor and MHC class I repertoires in bats [1,4,5,9,20] would benefit
 from such audits. Functional assays, such as the study of MR1-restricted T cells in
 *Pteropus alecto* [19], address the function of the resulting gene models.
 
@@ -367,8 +433,16 @@ such calls are the single pattern GT–AC, 7 of them in MHC class I loci of one 
 that uniform is more likely to be systematic in the extraction than biological, and the status calls
 resting on it should be treated as provisional. Prefixes of the read runs were used rather than
 whole runs. The synthetic validation covered three planted events. Sensitivity across
-variant classes remains unmeasured. With one individual per species, variation in gene
+variant classes remains unmeasured. The windows were extracted around the canonical NKC, LRC and
+MHC class I regions, and that choice has a known cost in this clade: MHC class I genes lie outside
+the canonical chromosome in *Rousettus aegyptiacus* and are dispersed onto a chromosome homologous
+to human chromosome 19 in *Myotis myotis* and three other yangochiropterans [20], while eleven
+*E. fuscus* class I genes of unresolved position were reported earlier [9]. Loci outside the
+extracted windows are therefore absent from the counts reported here, and the six KLRG2 models
+noted in §2.6 are a direct instance. With one individual per species, variation in gene
 content within species and error rates for the workflow remain outside the scope of this study.
+No immunogenetic or genome-level work specific to *M. sodalis*, *R. clivosus* or *E. dupreanum* was
+available for comparison; the published counts used above come from congeners and confamilials.
 
 ## 5. Conclusions
 
@@ -376,7 +450,13 @@ Annotated immune-family counts differed by up to seven loci between the paired h
 one bat. Gene-model searches, genomic position, read coverage and upstream RNA junctions
 provided different kinds of evidence when inspecting those counts. Whole-locus depth flagged
 a strong signal whose peak lay next to the coding sequence. Renewed searches also identified
-cases where locus correspondence remained ambiguous. Reporting both haplotypes and the
+cases where locus correspondence remained ambiguous. Two further points follow from comparing
+the counts with the published literature. The counts are carried by partial and pseudogene-like
+models rather than by complete genes, so a raw locus total and a count of intact genes are
+different quantities and should not be compared across studies as though they were the same. And
+where an external count exists for the same species, it can contradict the annotation outright, as
+the single reported CD94 copy in *E. dupreanum* contradicts the six and seven intact KLRD1 models
+called here. Reporting both haplotypes, the status composition of each count and the
 evidence for individual gene models can make these uncertainties visible in comparative
 immunogenomics.
 
@@ -458,10 +538,27 @@ verified every number against the primary result tables and is responsible for a
 19. Leeansyah E, Hey YY, Sia WR, et al. MR1-restricted T cells with MAIT-like characteristics are
     functionally conserved in the pteropid bat *Pteropus alecto*. *iScience*. 2020;23(12):101876.
     doi:10.1016/j.isci.2020.101876
+20. Liu G, Ren Y, Zhou S, et al. Extraordinary diversity of antiviral immune-related gene families
+    across 38 bat species. *BMC Biology*. 2026;24(1):98. doi:10.1186/s12915-026-02571-1
+21. Hughes GM, Boston ESM, Finarelli JA, Murphy WJ, Higgins DG, Teeling EC. The birth and death of
+    olfactory receptor gene families in mammalian niche adaptation. *Molecular Biology and
+    Evolution*. 2018;35(6):1390–1406. doi:10.1093/molbev/msy028
+22. Dilthey A, Cox C, Iqbal Z, Nelson MR, McVean G. Improved genome inference in the MHC using a
+    population reference graph. *Nature Genetics*. 2015;47(6):682–688. doi:10.1038/ng.3257
+23. Dossa RG, Alperin DC, Hines MT, Hines SA. The equine CD1 gene family is the largest and most
+    diverse yet identified. *Immunogenetics*. 2014;66(1):33–42. doi:10.1007/s00251-013-0741-6
+24. Gunbin KV, Kopeina GS, Zhivotovsky B, Zamaraev AV. Features of the CD1 gene family in rodents
+    and the uniqueness of the immune system of naked mole-rat. *Biology Direct*. 2024;19(1):58.
+    doi:10.1186/s13062-024-00503-z
+25. Zhang G, Cowled C, Shi Z, et al. Comparative analysis of bat genomes provides insight into the
+    evolution of flight and immunity. *Science*. 2013;339(6118):456–460.
+    doi:10.1126/science.1230835
 
-> **Note on references.** All 19 references were verified against Crossref and Europe PMC on
-> 23 November 2026: title, first authors, journal, year, volume, issue, pages and DOI. Apply the
-> reference style of the target journal before submission.
+> **Note on references.** All 25 references were verified against Crossref and PubMed on
+> 23 November 2026: title, first authors, journal, year, volume, issue, pages and DOI. References
+> 20–25 were added last and are therefore not in first-citation order; renumber them into the
+> target journal's reference style before submission. Reference 4 has a published erratum
+> (*Molecular Ecology*. 2022;31(19):5124. doi:10.1111/mec.16626).
 
 ## Figure legends
 
