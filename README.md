@@ -26,8 +26,9 @@ PYTHON="uv run --with matplotlib --with scipy python3" ./reproduce.sh
 ```
 
 The script writes the derived tables to `07_code/derived/` and figures 1–5 to `07_code/figures/`.
-The three derived tables reproduce byte for byte against the deposited copies in
-`05_tables/derived/`.
+All five regenerated tables reproduce byte for byte against the deposited copies in
+`05_tables/derived/`: `copies_implied_vs_assembled`, `depth_null_fdr`,
+`haplotype_count_differences`, `counterpart_identity_by_family` and `klrd1_pairwise_identity`.
 
 One step does not run from this repository: section 4 of `analysis_extra.py` correlates the depth
 ratio with GC content and locus length, so it reads the window sequences
@@ -47,9 +48,9 @@ The paths at the top of those scripts point at a local working directory and hav
 | `02_methods_full.txt` | Full methods, including every command line and parameter |
 | `04_numbers/` | Raw stdout of the analysis steps, and `digest.txt`, the per-species accounting of every count quoted in the text |
 | `05_tables/summary/` | Per-family locus counts per haplotype, for the default and the sensitive pass, and the curated difference classes |
-| `05_tables/curation/` | Per-locus curation, difference curation, gap curation and back-search tables, one set per species |
+| `05_tables/curation/` | Per-locus curation, difference curation, gap curation and back-search tables, one set per species, plus the model protein sequences (`*.locus_proteins.faa`) |
 | `05_tables/readcheck/` | HiFi depth per locus, variant-site read support, transcript evidence, start-codon checks, window definitions |
-| `05_tables/derived/` | Per-family count differences, summed normalized depth vs assembled loci, the depth screen with BH-adjusted values, the KLRD1 junction check, the GC/length confounder check |
+| `05_tables/derived/` | Per-family count differences, summed normalized depth vs assembled loci, the depth screen with BH-adjusted values, the KLRD1 junction check, the GC/length confounder check, counterpart identity per family and all pairwise KLRD1 protein identities |
 | `05_tables/queries/` | The query sets used for annotation |
 | `06_figures/` | Figures 1–5 as submitted, PNG and PDF at 300 dpi |
 | `07_code/` | All analysis and figure code |

@@ -59,6 +59,10 @@ for t in copies_implied_vs_assembled depth_null_fdr; do
   cp "07_code/derived/$t.tsv" "manuscript/derived/$t.tsv"
 done
 
+echo
+echo "== phasing checks: counterpart identity, KLRD1 paralogue identity =="
+"${PY[@]}" 07_code/phase_checks.py
+
 echo "== figures 1-5 =="
 "${PY[@]}" 07_code/make_figures.py
 

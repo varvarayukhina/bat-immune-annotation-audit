@@ -10,7 +10,7 @@
 
 **Keywords:** haplotype-resolved assembly; gene family expansion; natural killer cell receptors; MHC class I; Chiroptera; copy number variation; annotation artefact
 
-**Word count:** main text ~5,500; 5 figures; 1 table; 31 references
+**Word count:** main text ~6,200; 5 figures; 1 table; 31 references
 
 ---
 
@@ -35,7 +35,10 @@ RNA junction evidence. Two families could be checked against published counts fo
 with opposite results: the LILR contrast between *M. sodalis* and the pteropodid *E. dupreanum*
 reproduces an independent report, whereas the 6 and 7 intact KLRD1 models called in
 *E. dupreanum* stand against the single CD94 copy reported for that species in a 38-species
-comparison, and only 10 of the 19 models retain junction support under a MAPQ ≥20 filter.
+comparison. All 171 pairwise protein identities among those 19 models have a median of 0.780, and
+the only six pairs above 0.95 are cross-haplotype, so they are a divergent array with allelic
+pairing rather than one locus counted repeatedly, and the discrepancy with the published figure is
+most likely a difference in counting criterion.
 Together, the cases identify where paralogue assignment, mapping
 and gene-model completion can change the interpretation of annotated locus counts.
 
@@ -111,7 +114,13 @@ differences and identify ambiguous assignments.
 
 Haplotype pairs were taken from the public assemblies of *Myotis sodalis* (mMyoSod1,
 GCA_057945255.1 / GCA_057945245.1), *Rhinolophus clivosus* (mRhiCli1, GCA_054645015.1 /
-GCA_054645025.1) and *Eidolon dupreanum* (mEidDup1, GCA_059749095.1 / GCA_059749105.1). Analysis
+GCA_054645025.1) and *Eidolon dupreanum* (mEidDup1, GCA_059749095.1 / GCA_059749105.1). All three
+were assembled to chromosome level by the submitting projects with hifiasm using Hi-C phasing
+[11] followed by yahs scaffolding, from PacBio HiFi reads with Arima Hi-C v2: *M. sodalis* at
+66.39× (Revio), *E. dupreanum* at 55.05× (Revio) and *R. clivosus* at 13.47× (Sequel II), as given
+in the NCBI assembly reports. The phasing is therefore Hi-C based rather than trio based, and the
+coverage available to the *R. clivosus* assembly is low by current standards; §4.1 returns to both
+points. Analysis
 windows covered the natural killer complex (NKC), the leukocyte receptor complex (LRC) and MHC
 class I regions with ±100 kb flanks: 39 windows (24.4 Mb) for *M. sodalis*, 24 (15.6 Mb) for
 *R. clivosus* and 22 (15.2 Mb) for *E. dupreanum*, across both haplotypes.
@@ -352,10 +361,34 @@ receive signal from the same read.
 Transcription is otherwise near-universal in these windows (Fig. 5a): of the families represented,
 only KLRG2 (all three individuals) and NCR2 (*M. sodalis*, *E. dupreanum*) had no RNA evidence in
 the tissues used, and FCAR in *R. clivosus* reached half of its loci. Because the reads come from
-other animals and distribute over near-identical copies, this should be read as transcription of the
+other animals and distribute over similar copies, this should be read as transcription of the
 family in the tissues sampled — blood, spleen and heart — rather than expression of an individual
 copy; single-cell work in
 *R. aegyptiacus* shows how unevenly such families are expressed across immune cell types [18].
+
+### 3.7 Counterpart identity and paralogue identity
+
+Two sequence-level checks test whether the reported differences could come from phasing rather
+than from annotation or from biology. A switch error, in which a contig changes from one parental
+haplotype to the other, leaves the same parental sequence in both haplotypes, so a locus and its
+counterpart would be near-identical. Summarising the counterpart alignment identities of the
+curated differences by family bounds that contribution. In *M. sodalis* no counterpart reaches 0.99
+and the highest is an MHC class I pair at 0.980, with a median of 0.888 over 39 pairs; a switch
+error cannot account for those differences. In *R. clivosus* one of eight pairs exceeds 0.99, a
+KLRD1 pair at 0.996. In *E. dupreanum* 30 of 46 pairs exceed 0.99, including all 16 CD1 pairs at a
+median of 0.9985, so for that species a switch error, a very recent duplication or low regional
+heterozygosity all remain possible and are not separated by these data.
+
+The second check asks whether the 19 KLRD1 models in *E. dupreanum* are one locus called
+repeatedly. All 171 pairwise protein identities among them have a median of 0.780 and a minimum of
+0.606, and only six pairs exceed 0.95. All six are cross-haplotype pairs: hap1_L030 with hap2_L034
+and hap1_L022 with hap2_L027 are identical, and four further pairs fall between 0.955 and 0.994.
+The models span 170–178 residues and share an SSCQNMWIGYQC.CYFIS motif carrying the cysteine pair
+near residue 60. The same pattern appears in *R. clivosus*, where seven KLRD1 models give a median
+pairwise identity of 0.746 with a minimum of 0.489 and all three pairs above 0.95 are
+cross-haplotype, whereas *M. sodalis* carries a single model per haplotype at 0.840 identity to
+each other. Within-array divergence of this size, with the near-identical pairs falling between
+rather than within haplotypes, is what a correctly phased pair of divergent arrays looks like.
 
 ## 4. Discussion
 
@@ -399,23 +432,37 @@ any family, whereas the pteropodid *E. dupreanum* carries 5 loci with no intact 
 haplotype. The annotation reproduces that published contrast between the two suborders without
 having been tuned to it.
 
-Third, KLRD1 goes the other way, and this is the clearest single indication that a count here is
-too high. CD94, the KLRD1 product, is regarded as a conserved single-copy gene across mammals, and
-the 38-species comparison reports exactly one intact CD94 copy in *E. dupreanum* [20]. The present
-annotation calls 6 intact KLRD1 models in hap1 and 7 in hap2 of that species. The read evidence
-fits over-calling rather than a genuine expansion: all 19 models attract RNA alignments and 18 have
-at least two upstream junction alignments, but only 10 survive the MAPQ ≥20 filter (Fig. 5b), and
-395 of 456 read pairs overlapping hap1 models recur in the hap2 mapping, so the same transcript
-reads are being counted at several copies. A gene that is single-copy across mammals, called six or
-seven times, with half the models losing read support once multi-mapping reads are removed, is the
-pattern this audit was built to surface. A documented mechanism fits. In a long-read assembly of a
-passerine, MHC alleles diverged enough that a diploid-aware assembler classified haplotypes of one
-locus as sequences from different genomic regions, so that paralogue number was readily over- or
-underestimated and amplicon sequencing was needed to resolve it [29]; the same study recovered only
-84% of the annotated MHC class I alleles by amplicon, indicating incomplete annotation as well. The
-38-species comparison notes that CD94 proteins lacking the conserved cysteines occur exclusively in
-pteropodid bats [20], so divergent CD94 sequence in *E. dupreanum* is the substrate that mechanism
-requires. Note that the published single-copy expectation concerns
+Third, KLRD1 produces an outright conflict with a published count, and resolving it required
+looking at the sequences rather than the totals. CD94, the KLRD1 product, is regarded as a
+conserved single-copy gene across mammals, and the 38-species comparison reports exactly one intact
+CD94 copy in *E. dupreanum* [20]. The present annotation calls 6 intact KLRD1 models in hap1 and 7
+in hap2 of that species, 19 models in all. Two explanations had to be separated: redundant calls on
+one locus, which would make the models near-identical, and a real array of divergent paralogues.
+We therefore computed all 171 pairwise protein identities among the 19 models (§3.6). The median is
+0.780 and the minimum 0.606, and only 6 pairs exceed 0.95. Those six are cross-haplotype pairs —
+hap1_L030 with hap2_L034 and hap1_L022 with hap2_L027 are identical, and four further pairs lie
+between 0.955 and 0.994 — which is the allelic pairing a correctly phased diploid should show. The
+models also carry the cysteine pair near residue 60 on which CD94 heterodimerisation depends [20],
+within a shared SSCQNMWIGYQC.CYFIS motif, and their lengths of 170–178 residues match CD94. On this
+evidence the 19 models are a genuinely divergent CD94-like array with correct allelic
+correspondence between the haplotypes, not one locus counted many times, and the within-array
+divergence is far too large for a phasing or assembly artefact to explain.
+
+The conflict with the published single copy is therefore most likely a difference in what was
+counted. That comparison scored protein-coding genes with intact open reading frames and notes that
+CD94 proteins lacking the conserved cysteines occur exclusively in pteropodid bats [20]; a stricter
+orthology or structural criterion would exclude divergent CD94-like paralogues that a
+family-level assignment retains. If so, a published figure of one and a figure here of six or seven
+describe the same sequence differently rather than one of them being wrong, which is precisely the
+comparability problem this study is about. The remaining read-level observation is consistent with
+that reading: all 19 models attract RNA alignments and 18 have at least two upstream junction
+alignments, but only 10 survive the MAPQ ≥20 filter (Fig. 5b) and 395 of 456 read pairs overlapping
+hap1 models recur in the hap2 mapping. Because the RNA comes from *E. helvum* rather than the
+assembled animal, cross-species reads distribute over similar copies, so the MAPQ loss measures
+assignment ambiguity in that mapping and not the number of genes. Deciding the true copy number
+needs targeted sequencing of the array, as amplicon sequencing was needed to settle paralogue
+number in a passerine MHC assembled from long reads [29]. Note that the published single-copy
+expectation concerns
 CD94 specifically; the earlier report of absent killer-cell lectin-like receptors in *P. alecto*
 refers to the Ly49/KLRA genes [25] and does not bear on KLRD1.
 
@@ -425,14 +472,19 @@ from such audits. Functional assays, such as the study of MR1-restricted T cells
 
 ### 4.1 Limitations
 
-The two haplotypes are treated throughout as faithful renderings of the two parental chromosomes,
-and that assumption is not tested here. Phasing without parental data [11] admits switch errors, in
-which a contig changes from one parental haplotype to the other, and such an error produces an
-apparent haplotype difference that is neither biology nor an annotation artefact. No switch-error
-screen was applied. Work on phased tandem arrays in polar fishes found assembly uncertainty to be
-ubiquitous across array haplotypes and built explicit controls for misassembly and switch errors
-before measuring haplotype copy-number diversity [30]; a comparable screen is the first thing this
-design needs.
+The two haplotypes are treated throughout as renderings of the two parental chromosomes. Hi-C
+phasing without parental data (§2.1) admits switch errors, in which a contig changes from one
+parental haplotype to the other, and such an error produces an apparent haplotype difference that
+is neither biology nor an annotation artefact. The sequence-level checks in §3.7 bound this but do
+not eliminate it. They rule it out for *M. sodalis*, where no counterpart pair reaches 0.99
+identity, and for the KLRD1 arrays of *R. clivosus* and *E. dupreanum*, whose internal divergence
+is far too large for a phasing artefact and whose near-identical pairs fall between haplotypes as
+allelic pairs should. They do not rule it out for the 30 *E. dupreanum* counterpart pairs above
+0.99 identity, the 16 CD1 pairs among them in particular: counterpart identity alone cannot
+distinguish a switch error from a recent duplication or from locally low heterozygosity. Settling
+that needs k-mer or Hi-C evidence against the assembly graph, as built for phased tandem arrays in
+polar fishes [30], which this study did not have. The low HiFi coverage behind the *R. clivosus*
+assembly, 13.47×, is a further reason to treat its phasing as the least secure of the three.
 
 Reads were mapped to extracted windows rather than whole genomes, and this is the largest limitation
 of the depth analysis. Reads from elsewhere in the genome can align to similar sequence in the
@@ -481,9 +533,11 @@ cases where locus correspondence remained ambiguous. Two further points follow f
 the counts with the published literature. The counts are carried by partial and pseudogene-like
 models rather than by complete genes, so a raw locus total and a count of intact genes are
 different quantities and should not be compared across studies as though they were the same. And
-where an external count exists for the same species, it can contradict the annotation outright, as
-the single reported CD94 copy in *E. dupreanum* contradicts the six and seven intact KLRD1 models
-called here. Reporting both haplotypes, the status composition of each count and the
+where an external count exists for the same species it can disagree with the annotation by an
+order of magnitude, as one reported CD94 copy in *E. dupreanum* disagrees with the six and seven
+intact KLRD1 models called here, while the sequences themselves show a divergent array that is
+correctly phased; the disagreement is about what counts as a copy, not about the assembly.
+Reporting both haplotypes, the status composition of each count and the
 evidence for individual gene models can make these uncertainties visible in comparative
 immunogenomics.
 
@@ -507,7 +561,8 @@ GCF_014108235.1 (*Myotis myotis*, mMyoMyo1.p) for *M. sodalis*; GCF_004115265.2
 
 **Code and derived-data availability.** Analysis scripts, parameter files, all result tables (locus
 curation, difference curation, read depth, variant-site support, transcript evidence, start-codon
-checks, per-family count differences, normalized depth sums, exploratory depth screen) and the figure code are
+checks, per-family count differences, normalized depth sums, exploratory depth screen, counterpart
+identity per family, all pairwise KLRD1 protein identities), the model protein sequences and the figure code are
 deposited at https://github.com/varvarayukhina/bat-immune-annotation-audit under the MIT licence.
 
 **Author contributions.** Varvara Iukhina designed the study, performed the analyses, verified all
