@@ -148,9 +148,13 @@ exon.
 
 ### 2.6 Start-codon check
 
-For every locus called intact, RefSeq proteins of the same family from an annotated relative
-(*M. myotis*, *R. ferrumequinum*, *R. aegyptiacus*) were aligned to the locus with miniprot, and the
-query start and first codon of the best hit were recorded.
+For loci called intact, RefSeq proteins of the same family from an annotated relative
+(*M. myotis*, GCF_014108235.1; *R. ferrumequinum*, GCF_004115265.2; *R. aegyptiacus*,
+GCF_014176215.1) were aligned to the locus with miniprot, and the query start and first codon of
+the best hit were recorded. This covered 116 of the 122 intact loci. The six not covered are
+single KLRG2 models, one per haplotype, that lie on contigs outside the extracted NKC, LRC and
+MHC-I windows; all six carry a canonical ATG and a confirmed family assignment in the pilot pass,
+so none of them is among the 50 start-codon flags followed up in §3.5.
 
 ### 2.7 Statistics and reproducibility
 
@@ -225,14 +229,25 @@ for which mapping ambiguity or assembly copy-number errors merit inspection [12]
 
 The depth screen flagged 45 of 472 loci at nominal q <0.05 (13, 19 and 13). The robust
 centre of log2(ratio) was +0.06, +0.05 and −0.17 with respective scales of 0.48, 0.58 and 0.55.
-The empirical fit and the assigned score for zero ratios make the screen exploratory. The two criteria can only be compared on one depth column, and as
+The empirical fit and the assigned score for zero ratios make the screen exploratory, and the
+number of flags depends on both. Twenty of the 45 flags are the zero-ratio loci themselves.
+Refitting on the positive ratios alone and removing the zero-ratio loci from the multiple-testing
+set leaves 23 flags of 452 (11, 5 and 7); the count for *R. clivosus* falls from 19 to 5 because 13
+of the 20 zeros are in that individual. The assigned score also changes calls among the positive
+ratios: each zero contributes a two-sided tail area of order 10⁻¹⁵, which shifts the
+Benjamini–Hochberg ranks, and two loci at ratios of 0.31 and 0.30 (*R. clivosus* hap1_L007,
+*E. dupreanum* hap2_L006) are flagged only while the zeros are present. Fifteen of the 20
+zero-ratio loci have an all-primary-read ratio inside the 0.55–1.7× corridor, so zero depth after
+the MAPQ ≥20 filter records mappability among near-identical copies rather than absent sequence.
+The 45 flags should be read as the output of this screening rule and not as a count of depth
+anomalies. The two criteria can only be compared on one depth column, and as
 implemented they do not share one: the corridor is applied to depth from all primary reads, the
 empirical null to depth from reads at MAPQ ≥20. Applied both to the MAPQ-filtered column, they agree
-for 415 of 472 loci (87.9%, 95% CI 84.7–90.6%); no significant locus then lies inside the corridor,
-and all 57 disagreements are loci outside the corridor that the test does not call. Comparing the
-corridor call as published against the test, which mixes the two columns, gives 395 of 472 (83.7%,
-95% CI 80.1–86.7%), with 28 significant loci inside the corridor and 49 outside it (28 above 1.7×,
-21 below 0.55×) that are not significant. These comparisons describe how the classifications change with the depth column and
+for 415 of 472 loci (87.9%, 95% CI 84.7–90.6%); no flagged locus then lies inside the corridor,
+and all 57 disagreements are loci outside the corridor that the screen does not flag. Comparing the
+corridor call as published against the screen, which mixes the two columns, gives 395 of 472 (83.7%,
+95% CI 80.1–86.7%), with 28 flagged loci inside the corridor and 49 outside it (28 above 1.7×,
+21 below 0.55×) that are not flagged. These comparisons describe how the classifications change with the depth column and
 screening rule.
 
 We also compared summed normalized depth with the annotated locus count per family and
@@ -378,7 +393,10 @@ animal material was collected.
 **Data availability.** All primary data are public. Assemblies: GCA_057945255.1, GCA_057945245.1,
 GCA_054645015.1, GCA_054645025.1, GCA_059749095.1, GCA_059749105.1. Sequencing runs: SRR38296513,
 SRR36951662, SRR39556278 (PacBio HiFi); SRR1657060, SRR13417526, SRR36602444, SRR27278001
-(RNA-seq).
+(RNA-seq). Annotated relatives used for the RefSeq protein and start-codon checks:
+GCF_014108235.1 (*Myotis myotis*, mMyoMyo1.p) for *M. sodalis*; GCF_004115265.2
+(*Rhinolophus ferrumequinum*, mRhiFer1_v1.p) for *R. clivosus*; GCF_014176215.1
+(*Rousettus aegyptiacus*, mRouAeg1.p) for *E. dupreanum*.
 
 **Code and derived-data availability.** Analysis scripts, parameter files, all result tables (locus
 curation, difference curation, read depth, variant-site support, transcript evidence, start-codon
@@ -415,7 +433,7 @@ verified every number against the primary result tables and is responsible for a
    doi:10.1038/s41564-019-0371-3
 8. Rhie A, McCarthy SA, Fedrigo O, et al. Towards complete and error-free genome assemblies of all
    vertebrate species. *Nature*. 2021;592(7856):737–746. doi:10.1038/s41586-021-03451-0
-9. Ng JH, Tachedjian M, Wang LF, Baker ML. Evolution and comparative analysis of the bat MHC-I
+9. Ng JH, Tachedjian M, Deakin J, et al. Evolution and comparative analysis of the bat MHC-I
    region. *Scientific Reports*. 2016;6:21256. doi:10.1038/srep21256
 10. Roe D, Vierra-Green C, Pyo CW, et al. Revealing complete complex KIR haplotypes phased by
     long-read sequencing technology. *Genes and Immunity*. 2017;18(3):127–134.
@@ -441,10 +459,9 @@ verified every number against the primary result tables and is responsible for a
     functionally conserved in the pteropid bat *Pteropus alecto*. *iScience*. 2020;23(12):101876.
     doi:10.1016/j.isci.2020.101876
 
-> **Note on references 14–17.** Software and database citations are given in the form the publishers
-> list; verify volume, page and year against the publisher record before submission, and apply the
-> reference style of the target journal. References 1–13, 18 and 19 were verified against Europe PMC
-> on 12 November 2026.
+> **Note on references.** All 19 references were verified against Crossref and Europe PMC on
+> 23 November 2026: title, first authors, journal, year, volume, issue, pages and DOI. Apply the
+> reference style of the target journal before submission.
 
 ## Figure legends
 
@@ -465,7 +482,10 @@ fragment absent from the partner assembly with an unresolved CLEC-family label.
 **Figure 3.** *Normalized depth and annotated locus counts.* (**a**) Each point represents one
 of 472 loci from windows with median depth ≥4×. The ordinate is MAPQ ≥20 locus depth divided by
 the all-primary-read window median. The shaded band shows the fixed 0.55–1.7× corridor on this
-column. Orange marks the exploratory screen at nominal BH q < 0.05. The zero row contains 2, 13 and 5 loci, respectively.
+column. Orange marks the exploratory screen at nominal BH q < 0.05. The zero row contains 2, 13 and
+5 loci, respectively; these are the zero-coverage loci among the 472 plotted here, which is fewer
+than the 2, 16 and 5 in Table 1 because that table counts every locus with measured depth, without
+the ≥4× window requirement.
 The asterisk marks the *R. clivosus* hap1_L008 pile-up described in §3.4. (**b**) Each point
 compares the number of annotated loci with usable depth and the sum of their normalized
 depths for a family-haplotype group. The diagonal shows equality. Seven groups deviate by more than two units, four above
