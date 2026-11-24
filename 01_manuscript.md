@@ -52,18 +52,18 @@ common explanatory variable in that literature. The reported counts do not point
 all described as expanded, with 14 NKG2A/B-like genes, 5 CD94-like genes and 46 functional
 interferon genes [1]. A 37-species survey instead places the natural killer gene complex among
 more than 1,000 gene losses unique to bats, while reporting lineage-specific expansions of the
-MHC class I family [4]. A
+MHC class I family [2]. A
 further survey finds the type I interferon locus contracted in the bat ancestor, with
-0–4 interferon-α copies against 10–18 in outgroups [5], which does not sit easily beside the 12
+0–4 interferon-α copies against 10–18 in outgroups [3], which does not sit easily beside the 12
 interferon-α genes reported for *Rousettus* [1]. A recent 38-species comparison of NKG2A, CD94,
 MHC class I and type I interferon reports substantial between-species diversity in all four and
-argues against generalising from any one genome [20]. Other families move independently: APOBEC3
-expanded in the bat ancestor and again within *Myotis* [2], while a 115-genome analysis of
+argues against generalising from any one genome [4]. Other families move independently: APOBEC3
+expanded in the bat ancestor and again within *Myotis* [5], while a 115-genome analysis of
 selection signatures in immune genes reports an excess of adaptations on the ancestral chiropteran
-branch without addressing family size at all [3].
+branch without addressing family size at all [6].
 Functional work on single pathways, such as dampened STING-dependent
-interferon activation [6] or attenuated NLRP3 inflammasome responses [7], is often read together
-with these counts. Chromosome-level and haplotype-resolved bat assemblies are now routine [2,3,8],
+interferon activation [7] or attenuated NLRP3 inflammasome responses [8], is often read together
+with these counts. Chromosome-level and haplotype-resolved bat assemblies are now routine [5,6,9],
 and the counts drawn from them increasingly carry comparative weight.
 
 Two steps in that chain can create differences that are not in the genome. The first is gene
@@ -73,32 +73,32 @@ different locus counts in two runs or two assemblies. This is an acknowledged di
 than a hypothetical one. The 38-species comparison cited above states that assemblies built from
 short reads are prone to inaccuracies in structurally complex regions such as the MHC class I
 loci, that the resulting redundant contigs and gaps can lead to over- or underestimation of gene
-counts, and that the reliability of observed copy numbers is limited accordingly [20]; the same
-problem is documented for olfactory receptors [21], and inference in the human MHC was improved
-only by replacing the single linear reference with a population reference graph [22]. The effect
+counts, and that the reliability of observed copy numbers is limited accordingly [4]; the same
+problem is documented for olfactory receptors [10], and inference in the human MHC was improved
+only by replacing the single linear reference with a population reference graph [11]. The effect
 has also been measured directly. Comparing draft assemblies against higher-quality versions of the
 same genomes, upwards of 40% of gene families were inferred to have the wrong number of genes, in
 both directions, and the main cause of inflated counts was the fragmentation of genes onto
-separate contigs [26]. Applying different annotation methods across a clade, rather than one
-uniform method, inflated the apparent number of lineage-specific genes by up to 15-fold [27]. And
+separate contigs [12]. Applying different annotation methods across a clade, rather than one
+uniform method, inflated the apparent number of lineage-specific genes by up to 15-fold [13]. And
 4 to 16% of the sequence in three earlier vertebrate assemblies was falsely duplicated, affecting
 hundreds to thousands of genes and producing overestimated gene-family expansions; the main source
 was heterotype duplication, in which haplotype sequences divergent enough to defeat the assembler
-are placed as separate genes or regions [28]. The MHC
+are placed as separate genes or regions [14]. The MHC
 class I region of bats is also organised differently from the human region. In *Pteropus alecto*
 and *Eptesicus fuscus* the region between GABBR1 and TCF19 is contracted to about 1.1 Mb against
 about 1.7 Mb in human, class I genes are absent from the α and κ duplication blocks, and a single
 class I gene lies in the β block; eleven further class I genes sit on six separate *E. fuscus*
-scaffolds whose position relative to the region could not be resolved [9]. Across 38 bat species the chromosomal
+scaffolds whose position relative to the region could not be resolved [15]. Across 38 bat species the chromosomal
 distribution of MHC class I genes is lineage- and species-specific, with genes outside the
 canonical chromosome in *Rousettus aegyptiacus* and dispersed onto a chromosome homologous to
-human chromosome 19 in *Myotis myotis* and three other yangochiropterans [20]. The killer-cell
+human chromosome 19 in *Myotis myotis* and three other yangochiropterans [4]. The killer-cell
 receptor haplotypes of humans, of comparable complexity, were resolved only when long
-reads made full haplotypes available [10]. Together these are warnings that short-query annotation
+reads made full haplotypes available [16]. Together these are warnings that short-query annotation
 of such arrays is fragile. The second step is assembly: near-identical copies collapse into one and
-heterozygous segments are sometimes represented twice [11,12], so the assembled sequence need not
+heterozygous segments are sometimes represented twice [17,18], so the assembled sequence need not
 carry the true number of copies. Pangenome work in humans has shown how much structural variation a
-single reference hides [13].
+single reference hides [19].
 
 Paired haplotypes allow an annotation workflow to be inspected within one individual.
 Those haplotypes can differ in their gene content through structural variation. Errors shared
@@ -116,7 +116,7 @@ Haplotype pairs were taken from the public assemblies of *Myotis sodalis* (mMyoS
 GCA_057945255.1 / GCA_057945245.1), *Rhinolophus clivosus* (mRhiCli1, GCA_054645015.1 /
 GCA_054645025.1) and *Eidolon dupreanum* (mEidDup1, GCA_059749095.1 / GCA_059749105.1). All three
 were assembled to chromosome level by the submitting projects with hifiasm using Hi-C phasing
-[11] followed by yahs scaffolding, from PacBio HiFi reads with Arima Hi-C v2: *M. sodalis* at
+[17] followed by yahs scaffolding, from PacBio HiFi reads with Arima Hi-C v2: *M. sodalis* at
 66.39× (Revio), *E. dupreanum* at 55.05× (Revio) and *R. clivosus* at 13.47× (Sequel II), as given
 in the NCBI assembly reports. The phasing is therefore Hi-C based rather than trio based, and the
 coverage available to the *R. clivosus* assembly is low by current standards; §4.1 returns to both
@@ -128,7 +128,7 @@ class I regions with ±100 kb flanks: 39 windows (24.4 Mb) for *M. sodalis*, 24 
 ### 2.2 Gene calling and haplotype comparison
 
 Ninety-nine curated proteins of the target families (human, mouse and *Rousettus aegyptiacus*) were
-aligned to each haplotype with miniprot 0.18-r281 [14]. Loci were assembled from hits and classified
+aligned to each haplotype with miniprot 0.18-r281 [20]. Loci were assembled from hits and classified
 as intact, partial, pseudogene-like or uncertain by the presence of frameshifts, premature stop
 codons and non-canonical splice sites in the aligned coding sequence. The same pipeline was run
 twice per haplotype. The default pass searched each whole haplotype in chunks of at most 250 Mb with
@@ -137,15 +137,15 @@ The two passes therefore differ in the reference searched as well as in the sett
 secondary alignments applies per chunk in the first and once per window set in the second, so their
 difference is not attributable to sensitivity alone. The separate cap `-N 1000 --outn 1000` was used
 only in the curation step (§2.3). Haplotype regions were compared with minimap2 2.31-r1302
-(`-x asm10`) [15], giving the locus-level and gap-level difference lists used below (205, 136 and
+(`-x asm10`) [21], giving the locus-level and gap-level difference lists used below (205, 136 and
 148 loci, respectively).
 
 ### 2.3 Curation of the reported differences
 
 Every reported difference was re-examined. The locus and ±5 kb were extracted and searched again
 with all queries at sensitive settings, so that a locus missing only because of a relative-score
-cutoff could be recovered. Provisional family labels were checked with DIAMOND blastp 2.1.16 [16]
-against reviewed Swiss-Prot entries of human (20,429) and mouse (17,285), release 2026_04 [17]. Loci
+cutoff could be recovered. Provisional family labels were checked with DIAMOND blastp 2.1.16 [22]
+against reviewed Swiss-Prot entries of human (20,429) and mouse (17,285), release 2026_04 [23]. Loci
 reported in one haplotype only were mapped with 10 kb flanks onto the whole partner haplotype, as
 were all gaps ≥5 kb. A variant was labelled as affecting a splice site when it fell within 2 bp of
 an aligned exon boundary; the rule is positional and does not test whether the canonical GT or AG
@@ -272,7 +272,7 @@ loci with usable coverage (86.0%, 95% CI 82.6–88.9%) in the fixed 0.55–1.7×
 primary reads. Of the 17 additional loci, 13 lay outside the mapped windows and four fell in
 windows with median depth below 4×. At the same all-read thresholds, 33 loci were at or above
 1.7×, 31 were between 0.2× and 0.55×, and two were below 0.2×. High and low ratios identify regions
-for which mapping ambiguity or assembly copy-number errors merit inspection [12]. Across the
+for which mapping ambiguity or assembly copy-number errors merit inspection [18]. Across the
 476 loci for which depth could be computed, 23 had zero coverage after the MAPQ ≥20 filter
 (2, 16 and 5 per individual). Of these, 20 passed the window coverage criterion and enter Fig. 3a
 (2, 13 and 5).
@@ -364,7 +364,7 @@ the tissues used, and FCAR in *R. clivosus* reached half of its loci. Because th
 other animals and distribute over similar copies, this should be read as transcription of the
 family in the tissues sampled — blood, spleen and heart — rather than expression of an individual
 copy; single-cell work in
-*R. aegyptiacus* shows how unevenly such families are expressed across immune cell types [18].
+*R. aegyptiacus* shows how unevenly such families are expressed across immune cell types [24].
 
 ### 3.7 Counterpart identity and paralogue identity
 
@@ -417,16 +417,16 @@ way. First, the locus counts are dominated by incomplete models. Of the 16 and 2
 *M. sodalis*, 3 and 6 are intact and the rest are partial or pseudogene-like; the MHC class I
 counts of 34 and 40, 18 and 15, and 19 and 16 contain 2, 1, 0, 0, 0 and 0 intact models across the
 six haplotypes. The largest mammalian CD1 family described to date is the horse's, with 13
-complete genes [23], and CD1 content is reduced in several mammals, CD1d and CD1e being absent from
-the naked mole-rat [24]. A count of 16 or 23 CD1 loci therefore exceeds any published mammalian CD1
+complete genes [25], and CD1 content is reduced in several mammals, CD1d and CD1e being absent from
+the naked mole-rat [26]. A count of 16 or 23 CD1 loci therefore exceeds any published mammalian CD1
 family, while the intact subset of 3 and 6 does not. The seven-locus difference that is the largest
 in this study is a difference between fragment inventories, not between functional repertoires, and
 the same reading applies to the MHC class I counts, where class I genes of unresolved position were
-already reported in *E. fuscus* a decade ago [9].
+already reported in *E. fuscus* a decade ago [15].
 
 Second, the LILR result agrees with an independent report. Leukocyte receptor complex genes of the
 immunoglobulin superfamily, the LILRs among them, underwent considerable duplication in *Myotis
-davidii* while almost completely failing to expand in *Pteropus alecto* [25]. Here *M. sodalis*
+davidii* while almost completely failing to expand in *Pteropus alecto* [27]. Here *M. sodalis*
 carries 20 and 23 LILR loci with 8 intact in each haplotype and the largest summed-depth excess of
 any family, whereas the pteropodid *E. dupreanum* carries 5 loci with no intact model in either
 haplotype. The annotation reproduces that published contrast between the two suborders without
@@ -435,14 +435,14 @@ having been tuned to it.
 Third, KLRD1 produces an outright conflict with a published count, and resolving it required
 looking at the sequences rather than the totals. CD94, the KLRD1 product, is regarded as a
 conserved single-copy gene across mammals, and the 38-species comparison reports exactly one intact
-CD94 copy in *E. dupreanum* [20]. The present annotation calls 6 intact KLRD1 models in hap1 and 7
+CD94 copy in *E. dupreanum* [4]. The present annotation calls 6 intact KLRD1 models in hap1 and 7
 in hap2 of that species, 19 models in all. Two explanations had to be separated: redundant calls on
 one locus, which would make the models near-identical, and a real array of divergent paralogues.
 We therefore computed all 171 pairwise protein identities among the 19 models (§3.6). The median is
 0.780 and the minimum 0.606, and only 6 pairs exceed 0.95. Those six are cross-haplotype pairs —
 hap1_L030 with hap2_L034 and hap1_L022 with hap2_L027 are identical, and four further pairs lie
 between 0.955 and 0.994 — which is the allelic pairing a correctly phased diploid should show. The
-models also carry the cysteine pair near residue 60 on which CD94 heterodimerisation depends [20],
+models also carry the cysteine pair near residue 60 on which CD94 heterodimerisation depends [4],
 within a shared SSCQNMWIGYQC.CYFIS motif, and their lengths of 170–178 residues match CD94. On this
 evidence the 19 models are a genuinely divergent CD94-like array with correct allelic
 correspondence between the haplotypes, not one locus counted many times, and the within-array
@@ -450,7 +450,7 @@ divergence is far too large for a phasing or assembly artefact to explain.
 
 The conflict with the published single copy is therefore most likely a difference in what was
 counted. That comparison scored protein-coding genes with intact open reading frames and notes that
-CD94 proteins lacking the conserved cysteines occur exclusively in pteropodid bats [20]; a stricter
+CD94 proteins lacking the conserved cysteines occur exclusively in pteropodid bats [4]; a stricter
 orthology or structural criterion would exclude divergent CD94-like paralogues that a
 family-level assignment retains. If so, a published figure of one and a figure here of six or seven
 describe the same sequence differently rather than one of them being wrong, which is precisely the
@@ -461,14 +461,14 @@ hap1 models recur in the hap2 mapping. Because the RNA comes from *E. helvum* ra
 assembled animal, cross-species reads distribute over similar copies, so the MAPQ loss measures
 assignment ambiguity in that mapping and not the number of genes. Deciding the true copy number
 needs targeted sequencing of the array, as amplicon sequencing was needed to settle paralogue
-number in a passerine MHC assembled from long reads [29]. Note that the published single-copy
+number in a passerine MHC assembled from long reads [28]. Note that the published single-copy
 expectation concerns
 CD94 specifically; the earlier report of absent killer-cell lectin-like receptors in *P. alecto*
-refers to the Ly49/KLRA genes [25] and does not bear on KLRD1.
+refers to the Ly49/KLRA genes [27] and does not bear on KLRD1.
 
-Comparative claims about NK receptor and MHC class I repertoires in bats [1,4,5,9,20] would benefit
+Comparative claims about NK receptor and MHC class I repertoires in bats [1–4,15] would benefit
 from such audits. Functional assays, such as the study of MR1-restricted T cells in
-*Pteropus alecto* [19], address the function of the resulting gene models.
+*Pteropus alecto* [29], address the function of the resulting gene models.
 
 ### 4.1 Limitations
 
@@ -515,8 +515,8 @@ whole runs. The synthetic validation covered three planted events. Sensitivity a
 variant classes remains unmeasured. The windows were extracted around the canonical NKC, LRC and
 MHC class I regions, and that choice has a known cost in this clade: MHC class I genes lie outside
 the canonical chromosome in *Rousettus aegyptiacus* and are dispersed onto a chromosome homologous
-to human chromosome 19 in *Myotis myotis* and three other yangochiropterans [20], while eleven
-*E. fuscus* class I genes of unresolved position were reported earlier [9]. Loci outside the
+to human chromosome 19 in *Myotis myotis* and three other yangochiropterans [4], while eleven
+*E. fuscus* class I genes of unresolved position were reported earlier [15]. Loci outside the
 extracted windows are therefore absent from the counts reported here, and the six KLRG2 models
 noted in §2.6 are a direct instance. With one individual per species, variation in gene
 content within species and error rates for the workflow remain outside the scope of this study.
@@ -578,74 +578,74 @@ verified every number against the primary result tables and is responsible for a
 1. Pavlovich SS, Lovett SP, Koroleva G, et al. The Egyptian Rousette genome reveals unexpected
    features of bat antiviral immunity. *Cell*. 2018;173(5):1098–1110.e18.
    doi:10.1016/j.cell.2018.03.070
-2. Jebb D, Huang Z, Pippel M, et al. Six reference-quality genomes reveal evolution of bat
-   adaptations. *Nature*. 2020;583(7817):578–584. doi:10.1038/s41586-020-2486-3
-3. Morales AE, Dong Y, Brown T, et al. Bat genomes illuminate adaptations to viral tolerance and
-   disease resistance. *Nature*. 2025;638(8050):449–458. doi:10.1038/s41586-024-08471-0
-4. Moreno Santillán DD, Lama TM, Gutierrez Guerrero YT, et al. Large-scale genome sampling reveals
+2. Moreno Santillán DD, Lama TM, Gutierrez Guerrero YT, et al. Large-scale genome sampling reveals
    unique immunity and metabolic adaptations in bats. *Molecular Ecology*. 2021;30(23):6449–6467.
    doi:10.1111/mec.16027
-5. Scheben A, Mendivil Ramos O, Kramer M, et al. Long-read sequencing reveals rapid evolution of
+3. Scheben A, Mendivil Ramos O, Kramer M, et al. Long-read sequencing reveals rapid evolution of
    immunity- and cancer-related genes in bats. *Genome Biology and Evolution*. 2023;15(9):evad148.
    doi:10.1093/gbe/evad148
-6. Xie J, Li Y, Shen X, et al. Dampened STING-dependent interferon activation in bats. *Cell Host &
+4. Liu G, Ren Y, Zhou S, et al. Extraordinary diversity of antiviral immune-related gene families
+   across 38 bat species. *BMC Biology*. 2026;24(1):98. doi:10.1186/s12915-026-02571-1
+5. Jebb D, Huang Z, Pippel M, et al. Six reference-quality genomes reveal evolution of bat
+   adaptations. *Nature*. 2020;583(7817):578–584. doi:10.1038/s41586-020-2486-3
+6. Morales AE, Dong Y, Brown T, et al. Bat genomes illuminate adaptations to viral tolerance and
+   disease resistance. *Nature*. 2025;638(8050):449–458. doi:10.1038/s41586-024-08471-0
+7. Xie J, Li Y, Shen X, et al. Dampened STING-dependent interferon activation in bats. *Cell Host &
    Microbe*. 2018;23(3):297–301.e4. doi:10.1016/j.chom.2018.01.006
-7. Ahn M, Anderson DE, Zhang Q, et al. Dampened NLRP3-mediated inflammation in bats and implications
+8. Ahn M, Anderson DE, Zhang Q, et al. Dampened NLRP3-mediated inflammation in bats and implications
    for a special viral reservoir host. *Nature Microbiology*. 2019;4(5):789–799.
    doi:10.1038/s41564-019-0371-3
-8. Rhie A, McCarthy SA, Fedrigo O, et al. Towards complete and error-free genome assemblies of all
+9. Rhie A, McCarthy SA, Fedrigo O, et al. Towards complete and error-free genome assemblies of all
    vertebrate species. *Nature*. 2021;592(7856):737–746. doi:10.1038/s41586-021-03451-0
-9. Ng JH, Tachedjian M, Deakin J, et al. Evolution and comparative analysis of the bat MHC-I
-   region. *Scientific Reports*. 2016;6:21256. doi:10.1038/srep21256
-10. Roe D, Vierra-Green C, Pyo CW, et al. Revealing complete complex KIR haplotypes phased by
-    long-read sequencing technology. *Genes and Immunity*. 2017;18(3):127–134.
-    doi:10.1038/gene.2017.10
-11. Cheng H, Jarvis ED, Fedrigo O, et al. Haplotype-resolved assembly of diploid genomes without
-    parental data. *Nature Biotechnology*. 2022;40(9):1332–1335. doi:10.1038/s41587-022-01261-x
-12. Guan D, McCarthy SA, Wood J, Howe K, Wang Y, Durbin R. Identifying and removing haplotypic
-    duplication in primary genome assemblies. *Bioinformatics*. 2020;36(9):2896–2898.
-    doi:10.1093/bioinformatics/btaa025
-13. Liao WW, Asri M, Ebler J, et al. A draft human pangenome reference. *Nature*.
-    2023;617(7960):312–324. doi:10.1038/s41586-023-05896-x
-14. Li H. Protein-to-genome alignment with miniprot. *Bioinformatics*. 2023;39(1):btad014.
-    doi:10.1093/bioinformatics/btad014
-15. Li H. Minimap2: pairwise alignment for nucleotide sequences. *Bioinformatics*.
-    2018;34(18):3094–3100. doi:10.1093/bioinformatics/bty191
-16. Buchfink B, Reuter K, Drost HG. Sensitive protein alignments at tree-of-life scale using
-    DIAMOND. *Nature Methods*. 2021;18(4):366–368. doi:10.1038/s41592-021-01101-x
-17. The UniProt Consortium. UniProt: the Universal Protein Knowledgebase in 2025. *Nucleic Acids
-    Research*. 2025;53(D1):D609–D617. doi:10.1093/nar/gkae1010
-18. Friedrichs V, Toussaint C, Schäfer A, et al. Landscape and age dynamics of immune cells in the
-    Egyptian rousette bat. *Cell Reports*. 2022;40(10):111305. doi:10.1016/j.celrep.2022.111305
-19. Leeansyah E, Hey YY, Sia WR, et al. MR1-restricted T cells with MAIT-like characteristics are
-    functionally conserved in the pteropid bat *Pteropus alecto*. *iScience*. 2020;23(12):101876.
-    doi:10.1016/j.isci.2020.101876
-20. Liu G, Ren Y, Zhou S, et al. Extraordinary diversity of antiviral immune-related gene families
-    across 38 bat species. *BMC Biology*. 2026;24(1):98. doi:10.1186/s12915-026-02571-1
-21. Hughes GM, Boston ESM, Finarelli JA, Murphy WJ, Higgins DG, Teeling EC. The birth and death of
+10. Hughes GM, Boston ESM, Finarelli JA, Murphy WJ, Higgins DG, Teeling EC. The birth and death of
     olfactory receptor gene families in mammalian niche adaptation. *Molecular Biology and
     Evolution*. 2018;35(6):1390–1406. doi:10.1093/molbev/msy028
-22. Dilthey A, Cox C, Iqbal Z, Nelson MR, McVean G. Improved genome inference in the MHC using a
+11. Dilthey A, Cox C, Iqbal Z, Nelson MR, McVean G. Improved genome inference in the MHC using a
     population reference graph. *Nature Genetics*. 2015;47(6):682–688. doi:10.1038/ng.3257
-23. Dossa RG, Alperin DC, Hines MT, Hines SA. The equine CD1 gene family is the largest and most
-    diverse yet identified. *Immunogenetics*. 2014;66(1):33–42. doi:10.1007/s00251-013-0741-6
-24. Gunbin KV, Kopeina GS, Zhivotovsky B, Zamaraev AV. Features of the CD1 gene family in rodents
-    and the uniqueness of the immune system of naked mole-rat. *Biology Direct*. 2024;19(1):58.
-    doi:10.1186/s13062-024-00503-z
-25. Zhang G, Cowled C, Shi Z, et al. Comparative analysis of bat genomes provides insight into the
-    evolution of flight and immunity. *Science*. 2013;339(6118):456–460.
-    doi:10.1126/science.1230835
-26. Denton JF, Lugo-Martinez J, Tucker AE, Schrider DR, Warren WC, Hahn MW. Extensive error in the
+12. Denton JF, Lugo-Martinez J, Tucker AE, Schrider DR, Warren WC, Hahn MW. Extensive error in the
     number of genes inferred from draft genome assemblies. *PLoS Computational Biology*.
     2014;10(12):e1003998. doi:10.1371/journal.pcbi.1003998
-27. Weisman CM, Murray AW, Eddy SR. Mixing genome annotation methods in a comparative analysis
+13. Weisman CM, Murray AW, Eddy SR. Mixing genome annotation methods in a comparative analysis
     inflates the apparent number of lineage-specific genes. *Current Biology*.
     2022;32(12):2632–2639.e2. doi:10.1016/j.cub.2022.04.085
-28. Ko BJ, Lee C, Kim J, et al. Widespread false gene gains caused by duplication errors in genome
+14. Ko BJ, Lee C, Kim J, et al. Widespread false gene gains caused by duplication errors in genome
     assemblies. *Genome Biology*. 2022;23(1):205. doi:10.1186/s13059-022-02764-1
-29. Mellinger S, Stervander M, Lundberg M, Drews A, Westerdahl H. Improved haplotype resolution of
+15. Ng JH, Tachedjian M, Deakin J, et al. Evolution and comparative analysis of the bat MHC-I
+    region. *Scientific Reports*. 2016;6:21256. doi:10.1038/srep21256
+16. Roe D, Vierra-Green C, Pyo CW, et al. Revealing complete complex KIR haplotypes phased by
+    long-read sequencing technology. *Genes and Immunity*. 2017;18(3):127–134.
+    doi:10.1038/gene.2017.10
+17. Cheng H, Jarvis ED, Fedrigo O, et al. Haplotype-resolved assembly of diploid genomes without
+    parental data. *Nature Biotechnology*. 2022;40(9):1332–1335. doi:10.1038/s41587-022-01261-x
+18. Guan D, McCarthy SA, Wood J, Howe K, Wang Y, Durbin R. Identifying and removing haplotypic
+    duplication in primary genome assemblies. *Bioinformatics*. 2020;36(9):2896–2898.
+    doi:10.1093/bioinformatics/btaa025
+19. Liao WW, Asri M, Ebler J, et al. A draft human pangenome reference. *Nature*.
+    2023;617(7960):312–324. doi:10.1038/s41586-023-05896-x
+20. Li H. Protein-to-genome alignment with miniprot. *Bioinformatics*. 2023;39(1):btad014.
+    doi:10.1093/bioinformatics/btad014
+21. Li H. Minimap2: pairwise alignment for nucleotide sequences. *Bioinformatics*.
+    2018;34(18):3094–3100. doi:10.1093/bioinformatics/bty191
+22. Buchfink B, Reuter K, Drost HG. Sensitive protein alignments at tree-of-life scale using
+    DIAMOND. *Nature Methods*. 2021;18(4):366–368. doi:10.1038/s41592-021-01101-x
+23. The UniProt Consortium. UniProt: the Universal Protein Knowledgebase in 2025. *Nucleic Acids
+    Research*. 2025;53(D1):D609–D617. doi:10.1093/nar/gkae1010
+24. Friedrichs V, Toussaint C, Schäfer A, et al. Landscape and age dynamics of immune cells in the
+    Egyptian rousette bat. *Cell Reports*. 2022;40(10):111305. doi:10.1016/j.celrep.2022.111305
+25. Dossa RG, Alperin DC, Hines MT, Hines SA. The equine CD1 gene family is the largest and most
+    diverse yet identified. *Immunogenetics*. 2014;66(1):33–42. doi:10.1007/s00251-013-0741-6
+26. Gunbin KV, Kopeina GS, Zhivotovsky B, Zamaraev AV. Features of the CD1 gene family in rodents
+    and the uniqueness of the immune system of naked mole-rat. *Biology Direct*. 2024;19(1):58.
+    doi:10.1186/s13062-024-00503-z
+27. Zhang G, Cowled C, Shi Z, et al. Comparative analysis of bat genomes provides insight into the
+    evolution of flight and immunity. *Science*. 2013;339(6118):456–460.
+    doi:10.1126/science.1230835
+28. Mellinger S, Stervander M, Lundberg M, Drews A, Westerdahl H. Improved haplotype resolution of
     highly duplicated MHC genes in a long-read genome assembly using MiSeq amplicons. *PeerJ*.
     2023;11:e15480. doi:10.7717/peerj.15480
+29. Leeansyah E, Hey YY, Sia WR, et al. MR1-restricted T cells with MAIT-like characteristics are
+    functionally conserved in the pteropid bat *Pteropus alecto*. *iScience*. 2020;23(12):101876.
+    doi:10.1016/j.isci.2020.101876
 30. Moosman OW, Kelley JL, Bogan SN. Mitigating assembly and switch errors in phased genomes of
     polar fishes reveals haplotype diversity in copy number of antifreeze protein genes.
     *Heredity*. 2026;135(3):174–186. doi:10.1038/s41437-025-00803-8
@@ -654,9 +654,9 @@ verified every number against the primary result tables and is responsible for a
     *G3 Genes|Genomes|Genetics*. 2015;5(5):931–941. doi:10.1534/g3.114.015784
 
 > **Note on references.** All 31 references were verified against Crossref and PubMed on
-> 23 November 2026: title, first authors, journal, year, volume, issue, pages and DOI. References
-> 20–31 were added last and are therefore not in first-citation order; renumber them into the
-> target journal's reference style before submission. Reference 4 has a published erratum
+> 23 November 2026: title, first authors, journal, year, volume, issue, pages and DOI. They are
+> numbered in order of first citation; apply the target journal's reference style before
+> submission. Reference 2 has a published erratum
 > (*Molecular Ecology*. 2022;31(19):5124. doi:10.1111/mec.16626). Reference 30 appeared online in
 > October 2025 and in the March 2026 issue; the issue citation is given.
 
