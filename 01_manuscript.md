@@ -10,7 +10,7 @@
 
 **Keywords:** haplotype-resolved assembly; gene family expansion; natural killer cell receptors; MHC class I; Chiroptera; copy number variation; annotation artefact
 
-**Word count:** main text ~6,200; 5 figures; 1 table; 31 references
+**Word count:** main text ~6,300; 5 figures; 1 table; 32 references
 
 ---
 
@@ -23,8 +23,10 @@ locus-level calls in natural killer receptor, leukocyte receptor and MHC class I
 renewed annotation searches, same-individual PacBio HiFi reads and RNA-seq and RefSeq proteins
 from relatives. In the default pass, the largest difference was seven annotated CD1 loci in
 *M. sodalis* (16 versus 23), of which 3 and 6 were intact models and the remainder partial or
-pseudogene-like; the raw counts exceed the largest mammalian CD1 family so far described, while the
-intact subsets do not. The sums of absolute per-family differences were 21, 8 and 6
+pseudogene-like. The raw totals match a published survey that counted genes and pseudogenes
+together in a congeneric *Myotis*, whereas the intact subsets sit well inside the mammalian range
+for complete CD1 genes, so the difference is between fragment inventories rather than between
+functional repertoires. The sums of absolute per-family differences were 21, 8 and 6
 across the three individuals. In 91 of 117 flagged rows, renewed searches found a model of
 the same family and status in the investigated partner region. Multiple landings or
 out-of-window matches were flagged in 61 of these 91 rows. Fifteen rows carried candidate
@@ -416,17 +418,25 @@ Three of these results can be placed against published counts, and they do not a
 way. First, the locus counts are dominated by incomplete models. Of the 16 and 23 CD1 loci in
 *M. sodalis*, 3 and 6 are intact and the rest are partial or pseudogene-like; the MHC class I
 counts of 34 and 40, 18 and 15, and 19 and 16 contain 2, 1, 0, 0, 0 and 0 intact models across the
-six haplotypes. The largest mammalian CD1 family described to date is the horse's, with 13
-complete genes [25], and CD1 content is reduced in several mammals, CD1d and CD1e being absent from
-the naked mole-rat [26]. A count of 16 or 23 CD1 loci therefore exceeds any published mammalian CD1
-family, while the intact subset of 3 and 6 does not. The seven-locus difference that is the largest
-in this study is a difference between fragment inventories, not between functional repertoires, and
+six haplotypes. Those raw totals are in line with the published mammalian range once the counting
+basis is matched. A BLAST survey of 15 mammalian genomes, which the authors note returns functional
+genes and pseudogenes together, gives 26 CD1 loci in the microbat *Myotis lucifugus* and 6 in the
+megabat *Pteropus vampyrus*, against 16 in the horse, 5 in human and 2 in mouse, and concludes that
+*M. lucifugus* has a high number of CD1 genes [25]. The 16 and 23 loci called here in a congeneric
+*Myotis* and the 10 and 10 in the pteropodid *E. dupreanum* therefore reproduce that contrast
+rather than exceeding it. The counts of complete genes are a different quantity: the largest
+mammalian CD1 family of complete genes described to date is the horse's, with 13 [26], and CD1
+content is reduced in several mammals, CD1d and CD1e being absent from the naked mole-rat [27].
+Against that basis the intact subsets found here, 3 and 6 in *M. sodalis* and 1 and 2 in
+*E. dupreanum*, are unremarkable. The seven-locus difference that is the largest
+in this study is therefore a difference between fragment inventories, not between functional
+repertoires. That distinction is the one the earlier survey flagged and could not make, and
 the same reading applies to the MHC class I counts, where class I genes of unresolved position were
 already reported in *E. fuscus* a decade ago [15].
 
 Second, the LILR result agrees with an independent report. Leukocyte receptor complex genes of the
 immunoglobulin superfamily, the LILRs among them, underwent considerable duplication in *Myotis
-davidii* while almost completely failing to expand in *Pteropus alecto* [27]. Here *M. sodalis*
+davidii* while almost completely failing to expand in *Pteropus alecto* [28]. Here *M. sodalis*
 carries 20 and 23 LILR loci with 8 intact in each haplotype and the largest summed-depth excess of
 any family, whereas the pteropodid *E. dupreanum* carries 5 loci with no intact model in either
 haplotype. The annotation reproduces that published contrast between the two suborders without
@@ -461,14 +471,14 @@ hap1 models recur in the hap2 mapping. Because the RNA comes from *E. helvum* ra
 assembled animal, cross-species reads distribute over similar copies, so the MAPQ loss measures
 assignment ambiguity in that mapping and not the number of genes. Deciding the true copy number
 needs targeted sequencing of the array, as amplicon sequencing was needed to settle paralogue
-number in a passerine MHC assembled from long reads [28]. Note that the published single-copy
+number in a passerine MHC assembled from long reads [29]. Note that the published single-copy
 expectation concerns
 CD94 specifically; the earlier report of absent killer-cell lectin-like receptors in *P. alecto*
-refers to the Ly49/KLRA genes [27] and does not bear on KLRD1.
+refers to the Ly49/KLRA genes [28] and does not bear on KLRD1.
 
 Comparative claims about NK receptor and MHC class I repertoires in bats [1–4,15] would benefit
 from such audits. Functional assays, such as the study of MR1-restricted T cells in
-*Pteropus alecto* [29], address the function of the resulting gene models.
+*Pteropus alecto* [30], address the function of the resulting gene models.
 
 ### 4.1 Limitations
 
@@ -483,14 +493,14 @@ allelic pairs should. They do not rule it out for the 30 *E. dupreanum* counterp
 0.99 identity, the 16 CD1 pairs among them in particular: counterpart identity alone cannot
 distinguish a switch error from a recent duplication or from locally low heterozygosity. Settling
 that needs k-mer or Hi-C evidence against the assembly graph, as built for phased tandem arrays in
-polar fishes [30], which this study did not have. The low HiFi coverage behind the *R. clivosus*
+polar fishes [31], which this study did not have. The low HiFi coverage behind the *R. clivosus*
 assembly, 13.47×, is a further reason to treat its phasing as the least secure of the three.
 
 Reads were mapped to extracted windows rather than whole genomes, and this is the largest limitation
 of the depth analysis. Reads from elsewhere in the genome can align to similar sequence in the
 available windows. Reference bias of this kind is well documented in polymorphic multigene
 families: at the human HLA genes, mapping to a single reference overestimated reference-allele
-frequencies in the 1000 Genomes data [31]. Among primary
+frequencies in the 1000 Genomes data [32]. Among primary
 alignments with an aligned block ≥5 kb against the animal's own windows, those at divergence ≥0.10
 cover 37.5% of the read in *E. dupreanum* at a mean MAPQ of 3.7 and make up 72.5% of the reads,
 whereas those below 0.01 divergence cover 99.2% of the read at a mean MAPQ of 41.2; in
@@ -632,32 +642,35 @@ verified every number against the primary result tables and is responsible for a
     Research*. 2025;53(D1):D609–D617. doi:10.1093/nar/gkae1010
 24. Friedrichs V, Toussaint C, Schäfer A, et al. Landscape and age dynamics of immune cells in the
     Egyptian rousette bat. *Cell Reports*. 2022;40(10):111305. doi:10.1016/j.celrep.2022.111305
-25. Dossa RG, Alperin DC, Hines MT, Hines SA. The equine CD1 gene family is the largest and most
+25. Reinink P, Van Rhijn I. Mammalian CD1 and MR1 genes. *Immunogenetics*. 2016;68(8):515–523.
+    doi:10.1007/s00251-016-0926-x
+26. Dossa RG, Alperin DC, Hines MT, Hines SA. The equine CD1 gene family is the largest and most
     diverse yet identified. *Immunogenetics*. 2014;66(1):33–42. doi:10.1007/s00251-013-0741-6
-26. Gunbin KV, Kopeina GS, Zhivotovsky B, Zamaraev AV. Features of the CD1 gene family in rodents
+27. Gunbin KV, Kopeina GS, Zhivotovsky B, Zamaraev AV. Features of the CD1 gene family in rodents
     and the uniqueness of the immune system of naked mole-rat. *Biology Direct*. 2024;19(1):58.
     doi:10.1186/s13062-024-00503-z
-27. Zhang G, Cowled C, Shi Z, et al. Comparative analysis of bat genomes provides insight into the
+28. Zhang G, Cowled C, Shi Z, et al. Comparative analysis of bat genomes provides insight into the
     evolution of flight and immunity. *Science*. 2013;339(6118):456–460.
     doi:10.1126/science.1230835
-28. Mellinger S, Stervander M, Lundberg M, Drews A, Westerdahl H. Improved haplotype resolution of
+29. Mellinger S, Stervander M, Lundberg M, Drews A, Westerdahl H. Improved haplotype resolution of
     highly duplicated MHC genes in a long-read genome assembly using MiSeq amplicons. *PeerJ*.
     2023;11:e15480. doi:10.7717/peerj.15480
-29. Leeansyah E, Hey YY, Sia WR, et al. MR1-restricted T cells with MAIT-like characteristics are
+30. Leeansyah E, Hey YY, Sia WR, et al. MR1-restricted T cells with MAIT-like characteristics are
     functionally conserved in the pteropid bat *Pteropus alecto*. *iScience*. 2020;23(12):101876.
     doi:10.1016/j.isci.2020.101876
-30. Moosman OW, Kelley JL, Bogan SN. Mitigating assembly and switch errors in phased genomes of
+31. Moosman OW, Kelley JL, Bogan SN. Mitigating assembly and switch errors in phased genomes of
     polar fishes reveals haplotype diversity in copy number of antifreeze protein genes.
     *Heredity*. 2026;135(3):174–186. doi:10.1038/s41437-025-00803-8
-31. Brandt DYC, Aguiar VRC, Bitarello BD, Nunes K, Goudet J, Meyer D. Mapping bias overestimates
+32. Brandt DYC, Aguiar VRC, Bitarello BD, Nunes K, Goudet J, Meyer D. Mapping bias overestimates
     reference allele frequencies at the *HLA* genes in the 1000 Genomes Project Phase I data.
     *G3 Genes|Genomes|Genetics*. 2015;5(5):931–941. doi:10.1534/g3.114.015784
 
-> **Note on references.** All 31 references were verified against Crossref and PubMed on
+
+> **Note on references.** All 32 references were verified against Crossref and PubMed on
 > 23 November 2026: title, first authors, journal, year, volume, issue, pages and DOI. They are
 > numbered in order of first citation; apply the target journal's reference style before
 > submission. Reference 2 has a published erratum
-> (*Molecular Ecology*. 2022;31(19):5124. doi:10.1111/mec.16626). Reference 30 appeared online in
+> (*Molecular Ecology*. 2022;31(19):5124. doi:10.1111/mec.16626). Reference 31 appeared online in
 > October 2025 and in the March 2026 issue; the issue citation is given.
 
 ## Figure legends
